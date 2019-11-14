@@ -1,0 +1,66 @@
+.direction-list__item {
+  position: relative;
+  &:last-child {
+    .direction__options {
+      background: linear-gradient(to bottom, #ffffff, #edeff6);
+    }
+  }
+  a {
+    text-decoration: none;
+    font-family: 'BloggerSans';
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(68, 68, 68, 0.3);
+    line-height: 18px;
+    }
+  .direction__logo {
+    border-radius: 10px;
+  }
+  .direction__options {
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    top: -20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px;
+    padding-top: 30px;
+    padding-bottom: 23px;
+    .direction__country {
+      font-weight: 800;
+      font-size: 21px;
+      line-height: 21px;
+      color: #161c35;
+      width: 100%;
+      margin-bottom: 5px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 24px;
+        background-image: url();
+        background-color: grey;
+        border-radius: 4px;
+        top: -40px;
+      }
+    }
+    .direction__followers {
+      position: absolute;
+      top: 31px;
+      right: 25px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        top: 2px;
+        left: -20px;
+        background-image: url(../img/user.svg);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        opacity: 0.3;
+      }
+    }
+  }
+}
