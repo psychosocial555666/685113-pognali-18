@@ -1,0 +1,69 @@
+.profile-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'BloggerSans';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #444444;
+  width: 183px;
+  .profile-list__item {
+    padding-bottom: 30px;
+    position: relative;
+    &:nth-child(1) {
+      &::before {
+        content: "1";
+        position: absolute;
+        top: -5px;
+        right: -59px;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: #ffa530;
+        color: white;
+        font-family: 'BloggerSans';
+        font-size: 16px;
+        padding-left: 13px;
+        padding-top: 8px;
+        box-sizing: border-box;
+      }
+    }
+    &:nth-child(2) {
+      &::before {
+        content: "2";
+        position: absolute;
+        top: -5px;
+        right: -59px;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: #ffbd30;
+        color: white;
+        font-family: 'BloggerSans';
+        font-size: 16px;
+        padding-left: 13px;
+        padding-top: 8px;
+        box-sizing: border-box;
+      }
+    }
+    &:nth-child(3) {
+      &::before {
+        content: "3";
+        position: absolute;
+        top: -5px;
+        right: -59px;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: #ffd74b;
+        color: white;
+        font-family: 'BloggerSans';
+        font-size: 16px;
+        padding-left: 13px;
+        padding-top: 8px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
