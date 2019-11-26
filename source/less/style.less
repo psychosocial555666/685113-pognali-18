@@ -3,24 +3,13 @@
 @import "blocks/main-nav__toggle.less";
 @import "blocks/visually-hidden.less";
 @import "blocks/intro.less";
-@import "blocks/intro__slogan.less";
-@import "blocks/intro__logo.less";
 @import "blocks/user-menu.less";
-@import "blocks/user-menu__item--call-us.less";
-@import "blocks/user-menu__item--write-us.less";
-@import "blocks/user-menu__item--authorization.less";
-@import "blocks/intro__quote.less";
 @import "blocks/features.less";
-@import "blocks/features-list.less";
 @import "blocks/title.less";
 @import "blocks/service-about.less";
 @import "blocks/directions.less";
-@import "blocks/direction-list.less";
-@import "blocks/direction-list__item.less";
 @import "blocks/button.less";
 @import "blocks/companions.less";
-@import "blocks/companions-list.less";
-@import "blocks/companions-list__item.less";
 @import "blocks/profile.less";
 @import "blocks/profile__title.less";
 @import "blocks/profile-list.less";
@@ -34,8 +23,19 @@
 @import "blocks/social__list.less";
 @import "blocks/page-footer__copyright.less";
 @import "blocks/copyright__link.less";
+
 body {
   width: 320px; //Временная заплатка, потом уберу
   margin: 0 auto;
   padding: 0;
+}
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    width: 1440px;
+  }
 }
