@@ -1,30 +1,225 @@
 .user-login {
   background-color: #192144;
+  margin: 0;
   padding-top: 92px;
   position: relative;
-  top: -180px;
+  margin-top: -50px;
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 30px;
   border-radius: 0 0 20px 20px;
   box-sizing: border-box;
-  margin: 0;
   z-index: 2;
-  .user-login__title {
+}
+.user-login__title {
+  text-align: center;
+}
+.user-login__discription {
+  text-align: center;
+  font-family: 'BloggerSans';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  color: white;
+  margin: 0;
+  padding: 0 35px;
+  padding-bottom: 32px;
+  .login-link {
+    color: #ffd74b;
+  }
+}
+.user-login__intrance {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 32px;
+  input {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'BloggerSans';
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.3);
+    &:hover {
+      color: rgba(68, 68, 68, 0.5);
+    }
+    &:active, &:focus {
+      border: solid 4px white;
+      background-color: #192144;
+      color: white;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      outline: none;
+    }
+  }
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65px;
+    height: 100%;
+  }
+}
+.questions__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.questions {
+  font-family: 'BloggerSans';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  .questions__discription {
     text-align: center;
   }
-  .user-login__discription {
-    text-align: center;
-    font-family: 'BloggerSans';
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 22px;
-    color: white;
-    margin: 0;
-    padding: 0 35px;
-    padding-bottom: 32px;
-    .login-link {
-      color: #ffd74b;
+  a {
+    font-weight: 800;
+    color: #ffd74b;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 61px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+    position: relative;
+    &:hover {
+      color: #ffbd30;
+      svg {
+        fill: #ffbd30;
+      }
     }
+    &:active {
+      color: rgba(255, 189, 48, 0.3);
+      svg {
+        fill: rgba(255, 189, 48, 0.3);
+      }
+    }
+  }
+  span {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #121936;
+  }
+  svg {
+    width: 18px;
+    height: 18px;
+    fill: #ffd74b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -9px;
+    margin-top: -9px;
+  }
+}
+@media (min-width: 768px) {
+  .user-login {
+    padding-left: 75px;
+    padding-right: 75px;
+    border-radius: 0 0 50px 50px;
+    padding-bottom: 62px;
+  }
+  .user-login__discription {
+    font-size: 28px;
+    line-height: 33px;
+    padding: 0;
+    margin-bottom: 67px;
+  }
+  .user-login__intrance {
+    input {
+      border-radius: 20px;
+      padding-top: 30px;
+      padding-left: 30px;
+      &:active, &:focus {
+        padding-top: 23px;
+        padding-bottom: 23px;
+      }
+    }
+    button {
+      border-radius: 0 20px 20px 0;
+      width: 82px;
+    }
+  }
+  .questions__discription {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .questions__tel {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .questions__email {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .questions {
+    a {
+      padding-left: 90px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    span {
+      width: 67px;
+      height: 67px;
+      top: -5px;
+    }
+    svg {
+      width: 27px;
+      height: 27px;
+      margin-left: -14px;
+      margin-top: -14px;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .user-login {
+    padding: 188px 132px 138px 132px;
+  }
+  .user-login__title {
+    margin-bottom: 60px;
+  }
+  .user-login__discription {
+    padding-left: 284px;
+    padding-right: 284px;
+    text-align: center;
+  }
+  .user-login__intrance {
+    button {
+      width: 350px;
+      &::after {
+        content: "Регистрация";
+        position: relative;
+        top: 3px;
+        font-family: 'BloggerSans';
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 24px;
+        color: #1d2e5b;
+      }
+    }
+  }
+  .questions__wrapper {
+    flex-direction: row;
+    width: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+    justify-content: space-between;
+    box-sizing: border-box;
   }
 }

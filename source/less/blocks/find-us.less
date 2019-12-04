@@ -1,31 +1,90 @@
 .find-us {
   position: relative;
-  .find-us__wrapper {
-    background-color: #ffd74b;
-    padding: 57px 25px 35px 25px;
+  iframe {
+    width: 100%;
     position: relative;
-    top: -200px;
-    z-index: 1;
-    border-radius: 0 0 20px 20px;
+    margin-top: -50px;
+    left: 0;
+    min-height: 360px;
+    z-index: 0;
+  }
+}
+.find-us__wrapper {
+  background-color: #ffd74b;
+  padding: 87px 25px 35px 25px;
+  position: relative;
+  margin-top: -50px;
+  z-index: 1;
+  border-radius: 0 0 20px 20px;
+}
+.find-us__adress {
+  font-family: 'BloggerSans';
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 22px;
+  padding-left: 61px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #192144;
+  position: relative;
+  span {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #121936;
+    border-radius: 50%;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    svg {
+      width: 14px;
+      height: 22px;
+      fill: #ffd74b;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -7px;
+      margin-top: -11px;
+    }
+  }
+}
+.find-us__button {
+  border: solid 3px #192144;
+  padding-left: 21px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  &::before {
+    top: 23px;
+  }
+  &:hover {
+    background-color: #192144;
+    color: white;
+    &::before {
+      background-image: url(../img/triangle-arrow-button-white.svg);
+    }
+  }
+  &:active {
+    background-color: #192144;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+@media (min-width: 768px) {
+  .find-us__wrapper {
+    padding: 100px 75px 85px 75px;
+    border-radius: 0 0 50px 50px;
   }
   .find-us__adress {
-    font-family: 'BloggerSans';
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 22px;
-    padding-left: 61px;
-    padding-bottom: 30px;
-    margin: 0;
-    text-transform: uppercase;
-    color: #192144;
-    position: relative;
+    font-size: 28px;
+    line-height: 28px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 95px;
+    margin-bottom: 45px;
     span {
-      position: absolute;
-      width: 45px;
-      height: 45px;
-      background-color: #121936;
-      border-radius: 50%;
-      box-sizing: border-box;
+      width: 67px;
+      height: 67px;
       top: 0;
       left: 0;
       svg {
@@ -40,33 +99,19 @@
       }
     }
   }
-  iframe {
-    width: 100%;
-    position: relative;
-    top: -220px;
-    left: 0;
-    width: 320px;
-    height: 360px;
-    z-index: 0;
+}
+@media (min-width: 1440px) {
+  .find-us__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 119px 133px 60px;
   }
-  .find-us__button {
-    border: solid 3px #192144;
-    padding-left: 21px;
-    padding-top: 21px;
-    padding-bottom: 21px;
-    &::before {
-      top: 23px;
-    }
-    &:hover {
-      background-color: #192144;
-      color: white;
-      &::before {
-        background-image: url(../img/triangle-arrow-button-white.svg);
-      }
-    }
-    &:active {
-      background-color: #192144;
-      color: rgba(255, 255, 255, 0.3);
-    }
+  .find-us__adress {
+    flex-grow: 1;
+    min-width: 615px;
+    margin: 0;
+    padding-right: 0px;
+    margin-left: 145px;
   }
 }

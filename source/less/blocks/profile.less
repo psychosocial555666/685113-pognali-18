@@ -4,7 +4,185 @@
   padding-left: 50px;
   padding-bottom: 38px;
   position: relative;
-  top: -160px;
+  margin-top: -25px;
   border-radius: 0 0 20px 20px;
   z-index: 3;
+}
+.profile__title {
+  padding-bottom: 59px;
+  margin: 0;
+  width: 101px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: -145px;
+    width: 99px;
+    height: 99px;
+    background-image: url(../img/rates@1x.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+  }
+}
+.profile-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'BloggerSans';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #444444;
+  width: 183px;
+}
+.price-list {
+  display: none;
+}
+.profile-list__item {
+  padding-bottom: 30px;
+  position: relative;
+  &::before {
+    position: absolute;
+    top: -5px;
+    right: -59px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    color: white;
+    font-family: 'BloggerSans';
+    font-size: 16px;
+    padding-left: 13px;
+    padding-top: 8px;
+    box-sizing: border-box;
+  }
+  &:nth-child(1) {
+    &::before {
+      content: "1";
+      background-color: #ffa530;
+    }
+  }
+  &:nth-child(2) {
+    &::before {
+      content: "2";
+      background-color: #ffbd30;
+    }
+  }
+  &:nth-child(3) {
+    &::before {
+      content: "3";
+      background-color: #ffd74b;
+    }
+  }
+}
+.profile__rates {
+  font-family: 'BloggerSans';
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  color: #192144;
+  text-decoration: none;
+  &:hover {
+    color: rgba(19, 37, 118, 0.7);
+  }
+  &:active {
+    color: rgba(19, 37, 118, 0.3);
+  }
+}
+@media (min-width: 768px) {
+  .profile {
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 0 0 50px 50px;
+    margin-top: -150px;
+    padding-top: 140px;
+    padding-bottom: 86px;
+  }
+  .profile__title {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 100px;
+    &::before {
+      top: 330px;
+      right: 50px;
+      z-index: 2;
+    }
+  }
+  .profile-list {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 45px;
+  }
+  .profile-list__item {
+    width: 100%;
+    width: 490px;
+    margin: 0;
+    font-size: 28px;
+    line-height: 33px;
+    padding-left: 90px;
+    padding-bottom: 35px;
+    position: relative;
+    span {
+      display: none;
+    }
+    &::before {
+      width: 67px;
+      height: 67px;
+      top: -18px;
+      left: 0;
+      font-size: 28px;
+      padding-left: 26px;
+      padding-top: 18px;
+    }
+  }
+  .price-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: #e2e5f2;
+    border-radius: 20px;
+    width: 198px;
+    list-style: none;
+    font-family: 'BloggerSans';
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+    color: #444444;
+    text-align: center;
+    padding: 60px 0 25px 0;
+    margin: 0;
+    top: 200px;
+    right: 40px;
+  }
+  .price-list__item {
+    margin-bottom: 35px;
+  }
+  .profile__rates {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 90px;
+  }
+}
+@media (min-width: 1440px) {
+  .profile {
+    padding-left: 131px;
+    padding-right: 133px;
+    padding-bottom: 187px;
+  }
+  .price-list {
+    width: 444px;
+    right: 245px;
+    top: 255px;
+  }
+  .profile__title {
+    margin-bottom: 55px;
+    &::before {
+      width: 198px;
+      height: 198px;
+      top: 160px;
+      right: 0px;
+    }
+  }
 }
