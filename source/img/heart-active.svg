@@ -1,7 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  viewBox="0 0 13 11" style="enable-background:new 0 0 13 11;" xml:space="preserve">
-<path d="M12,1c-1.3-1.3-3.4-1.3-4.7,0L6.5,1.7L5.7,1C4.4-0.3,2.3-0.3,1,1c-1.3,1.3-1.3,3.4,0,4.6l0.8,0.8L6.5,11l4.7-4.6L12,5.6
-  C13.3,4.3,13.3,2.2,12,1z"/>
-</svg>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="heart"
+   x="0px"
+   y="0px"
+   viewBox="0 0 13 11"
+   style="enable-background:new 0 0 13 11;"
+   xml:space="preserve"
+   sodipodi:docname="heart-active.svg"
+   inkscape:version="0.92.1 r15371"><metadata
+   id="metadata11"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs9" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1440"
+   inkscape:window-height="838"
+   id="namedview7"
+   showgrid="false"
+   inkscape:zoom="21.454545"
+   inkscape:cx="6.5"
+   inkscape:cy="5.5"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="heart" />
+  <style
+   type="text/css"
+   id="style2">
+    .st0{fill:#f02323;}
+  </style>
+<path
+   d="M12,1c-1.3-1.3-3.4-1.3-4.7,0L6.5,1.7L5.7,1C4.4-0.3,2.3-0.3,1,1c-1.3,1.3-1.3,3.4,0,4.6l0.8,0.8L6.5,11l4.7-4.6L12,5.6   C13.3,4.3,13.3,2.2,12,1z"
+   id="path4" />
+<path
+   style="fill:#d40000;fill-opacity:1;stroke-width:0.04661017"
+   d="M 3.7868771,8.3169047 C 2.3181837,6.8822194 0.98874611,5.5615515 0.83257138,5.3820879 0.29812073,4.7679393 0.06722736,4.1484875 0.06848556,3.3321627 0.06933881,2.7785705 0.1581846,2.3885731 0.39330041,1.9063559 0.82518567,1.0205691 1.6469798,0.35912938 2.5925931,0.1362051 2.9838239,0.04397413 3.7342296,0.04579725 4.1199035,0.13991572 4.7670856,0.29785177 5.1582969,0.5402004 6.0451537,1.3325754 6.2692466,1.5327945 6.4739277,1.6966102 6.5,1.6966102 c 0.026072,0 0.2307534,-0.1638157 0.4548463,-0.3640348 0.8868568,-0.792375 1.2780681,-1.03472363 1.9252503,-1.19265968 0.3881564,-0.09472436 1.1364984,-0.09575973 1.5351574,-0.002124 0.692551,0.1626639 1.472078,0.67525251 1.896412,1.24701208 0.437878,0.5900074 0.620921,1.1426349 0.619848,1.8713873 -0.0013,0.8683614 -0.256628,1.5312214 -0.849193,2.2044149 -0.395901,0.4497686 -5.5185662,5.464818 -5.5820861,5.464818 -0.023653,0 -1.2446644,-1.173834 -2.7133578,-2.6085193 z"
+   id="path4488"
+   inkscape:connector-curvature="0" /></svg>
