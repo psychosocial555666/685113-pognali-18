@@ -1,0 +1,125 @@
+.profile-plan {
+  background-color: #dfe3f0;
+  padding: 25px 25px 45px 25px;
+  border-radius: 20px 20px 0 0;
+  margin-top: -20px;
+  position: relative;
+  z-index: 2;
+  font-family: 'BloggerSans';
+  font-size: 14px;
+  font-weight: 500;
+  color: #1d2e5b;
+}
+.plan-title {
+  font-size: 24px;
+  font-weight: 800;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+}
+.profile-plan__item {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.visit-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.visit-list {
+  padding: 0;
+  margin: 0;
+  margin-left: 5px;
+  font-weight: 800;
+}
+.plan-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.quantity-companions {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.plan-date {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.change-plan {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .profile-plan {
+    border-radius: 30px 30px 0 0;
+    margin-top: -30px;
+    padding: 50px 75px 100px 75px;
+  }
+  .profile-plan__item {
+    padding: 35px;
+    padding-bottom: 10px;
+  }
+  .plan-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  .visit-wrapper {
+    font-size: 24px;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    span {
+      order: 2;
+    }
+  }
+  .plan-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+  .plan-date {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .profile-plan {
+    padding: 50px 60px 110px 125px;
+    border-radius: 60px 60px 0 0;
+    margin-top: -60px;
+  }
+  .profile-plan__item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 40px 0 40px;
+  }
+  .visit-wrapper {
+    span {
+      order: 0;
+      margin-right: 35px;
+    }
+  }
+  .visit-list {
+    margin-right: 310px;
+  }
+  .quantity-companions {
+    min-width: 138px;
+    margin-right: 40px;
+  }
+  .plan-date {
+    min-width: 177px;
+    margin-right: 130px;
+  }
+  .change-plan {
+    margin-left: auto;
+  }
+}
