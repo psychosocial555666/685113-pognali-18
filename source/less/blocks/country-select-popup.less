@@ -1,0 +1,116 @@
+.popup-selected {
+  background-color: #1d2e5b;
+  border-radius: 4px 4px 0 0;
+  border: none;
+  color: white;
+  min-height: 40px;
+  &::before {
+    box-shadow: none;
+    background-color: inherit;
+    background-image: url(../img/small-cross.svg);
+    top: 2px;
+  }
+}
+.country-select-popup-wrapper {
+  padding: 0;
+  border: solid 1px #cbced9;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 20px 50px 0 rgba(29, 46, 91, 0.1);
+  margin-bottom: 0;
+  padding-bottom: 430px;
+  width: 219px;
+  background-color: white;
+  .letter-button {
+    width: 43.8px;
+  }
+  .country-nav__item--active {
+    .letter-button {
+      background-color: #cbced9;
+      color: #1d2e5b;
+    }
+  }
+}
+.country-select-popup {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+.country-selector__select {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .country-select-popup-wrapper {
+    width: 573px;
+    padding: 34px 286px 96px 27px;
+    border: none;
+    .country-nav__item--active {
+      .letter-button {
+        background-color: #1d2e5b;
+        color: white;
+      }
+      .country-list {
+        top: 30px;
+        right: 20px;
+      }
+    }
+    .country-nav__item {
+      .letter-button {
+        width: 52px;
+        height: 70px;
+        border: none;
+        outline: solid 1px #cbced9;
+        background-color: white;
+        font-family: 'BloggerSans';
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #192144;
+        cursor: pointer;
+        &:hover {
+          border: solid 1px #959bb2;
+        }
+        &:active {
+          background-color: #1d2e5b;
+          color: white;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .country-select-popup-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 730px;
+    padding: 37px 344px 34px 27px;
+    .country-nav__item {
+      width: 60px;
+      height: 70px;
+      min-width: 60px;
+      .country-list {
+        display: none;
+      }
+      .letter-button {
+        width: 60px;
+        height: 70px;
+        text-align: center;
+      }
+      .letter-header {
+        width: 60px;
+        height: 70px;
+      }
+    }
+    .country-nav__item--active {
+      .country-list {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+      }
+    }
+  }
+}
