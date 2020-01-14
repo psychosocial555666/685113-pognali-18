@@ -1,0 +1,98 @@
+.profile-popup {
+  position: absolute;
+  width: 270px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 25px 25px 0 25px;
+  bottom: -455px;
+  left: 25px;
+  z-index: 2;
+  box-sizing: border-box;
+  font-family: 'BloggerSans';
+  font-size: 16px;
+  font-weight: 300;
+  color: #444444;
+  box-shadow: 0px 20px 50px 0 rgba(29, 46, 91, 0.1);
+}
+.rates-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 93px;
+  tr {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #edeff6;
+    border-bottom: 1px solid #edeff6;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: -1px;
+    width: 100%;
+  }
+}
+.profile-popup-close {
+  width: 270px;
+  height: 60px;
+  position: absolute;
+  border: none;
+  background-color: #f3f4f8;
+  bottom: 0;
+  left: 0;
+  font-family: 'BloggerSans';
+  font-size: 16px;
+  font-weight: 800;
+  color: #1d2e5b;
+  border-radius: 0 0 20px 20px;
+}
+@media (min-width: 768px) {
+  .profile-popup {
+    width: 688px;
+    left: 40px;
+    border-radius: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
+    bottom: -1100px;
+    font-size: 22px;
+  }
+  .profile-popup__title {
+    margin-bottom: 60px;
+  }
+  .rates-table {
+    margin-bottom: 120px;
+    tr {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .profile-popup-close {
+    width: 688px;
+    border-radius: 0 0 30px 30px;
+    font-size: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  .profile-popup {
+    width: 750px;
+    left: 345px;
+    border-radius: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    bottom: -590px;
+    font-size: 22px;
+  }
+  .profile-popup__title {
+    margin-bottom: 60px;
+  }
+  .rates-table {
+    margin-bottom: 160px;
+    tr {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .profile-popup-close {
+    width: 750px;
+    height: 110px;
+    border-radius: 0 0 30px 30px;
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,119 @@
+.page-header {
+  background-color: #161c36;
+  width: 100%;
+  padding: 27px 25px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+  .logo__tablet {
+    display: none;
+  }
+  .logo__desktop {
+    display: none;
+  }
+  .site-list {
+    display: none;
+  }
+  .user-menu {
+    position: absolute;
+    top: 395px;
+  }
+  .main-nav__toggle {
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+  }
+}
+.page-header--inner, .page-header--pageform {
+  .user-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    padding: 40px 40px;
+    align-items: center;
+    background-color: #182044;
+    .logo__mobile {
+      display: none;
+    }
+    .logo__tablet {
+      display: block;
+    }
+    .user-menu {
+      position: relative;
+      display: flex;
+      width: 190px;
+      top: 0
+    }
+    .user-menu__item--call-us {
+      display: none;
+    }
+    .user-menu__item--write-us {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-header {
+    background-color: #161c36;
+    padding: 50px 60px;
+    .logo__desktop {
+      display: block;
+    }
+    .logo__tablet {
+      display: none;
+    }
+    .user-menu__item--call-us {
+      display: block;
+    }
+    .user-menu__item--write-us {
+      display: block;
+    }
+    .main-nav__toggle {
+      display: none;
+    }
+    .site-list {
+      display: flex;
+      list-style: none;
+      font-family: 'BloggerSans';
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      color: white;
+      width: 751px;
+      margin: 0;
+      padding-top: 10px;
+      padding-right: 248px;
+      padding-left: 119px;
+      justify-content: space-between;
+      box-sizing: border-box;
+      position: relative;
+      a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        &:hover {
+          color: #ffd74b;
+        }
+        &:active {
+          color: rgba(255, 215, 75, 0.3);
+        }
+      }
+      &::before {
+        content: "";
+        width: 60px;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        top: 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.service-about {
+  background-image: url(../img/about-mobile@1x.png);
+  background-color: #141b3b;
+  background-repeat: no-repeat;
+  background-position: 18px 39px;
+  position: relative;
+  padding-top: 33px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 84px;
+  font-family: 'BloggerSans';
+  font-weight: 300;
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 0 0 20px 20px;
+  z-index: 6;
+  .service-about__more-details {
+    display: none;
+  }
+  .service-about__logo {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .service-about {
+    top: 0;
+    background-image: none;
+    background-color: #182044;
+    display: flex;
+    padding-left: 40px;
+    padding-right: 0;
+    border-radius: 0 0 50px 50px;
+    .service-about__logo {
+      display: block;
+      width: 384px;
+      height: 578px;
+      background-image: url(../img/about-tablet@1x.png);
+      background-repeat: no-repeat;
+      background-position: 8px 25px;
+    }
+    .service-about__more-details {
+      display: block;
+      width: 270px;
+    }
+    .service-about__wrapper {
+      width: 325px;
+      padding-left: 35px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+    .service-about__discription {
+      font-size: 28px;
+      line-height: 33px;
+    }
+    .service-about__call {
+      font-size: 21px;
+      line-height: 25px;
+      margin-bottom: 50px;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .service-about {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 0;
+    .service-about__logo {
+      width: 630px;
+      height: 665px;
+      background-image: url(../img/about-desktop@1x.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    .service-about__wrapper {
+      width: 697px;
+      padding-left: 70px;
+    }
+    .service-about__call {
+      margin-bottom: 80px;
+      width: 415px;
+    }
+  }
+}

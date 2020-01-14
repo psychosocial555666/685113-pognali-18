@@ -1,0 +1,218 @@
+.directions {
+  background-color: #edeff6;
+  padding-top: 92px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: 'BloggerSans';
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  position: relative;
+  margin-top: -50px;
+  border-radius: 0 0 30px 30px;
+  z-index: 5;
+  .directions__title {
+    padding-left: 25px;
+    padding-right: 45px;
+  }
+  .directions__discription {
+    padding-left: 25px;
+    padding-right: 45px;
+    padding-bottom: 66px;
+  }
+}
+.direction-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.direction-list__item {
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  &:hover {
+    box-shadow: 0px 6px 21px 0 rgba(0, 0, 0, 0.08);
+  }
+  &:last-child {
+    .direction__options {
+      background: linear-gradient(to bottom, #ffffff, #edeff6);
+      border: 0 0 10px 10px;
+    }
+  }
+  a {
+    text-decoration: none;
+    font-family: 'BloggerSans';
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(68, 68, 68, 0.3);
+    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.direction__logo {
+  border-radius: 10px;
+}
+.direction__options {
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  margin-top: -20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 25px;
+  padding-top: 30px;
+  padding-bottom: 23px;
+}
+.direction__country {
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 21px;
+  color: #161c35;
+  width: 100%;
+  margin-bottom: 5px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 24px;
+    background-image: url();
+    background-color: grey;
+    border-radius: 4px;
+    top: -40px;
+  }
+}
+.direction__followers {
+  position: absolute;
+  top: 31px;
+  right: 25px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 2px;
+    left: -20px;
+    background-image: url(../img/user.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.3;
+  }
+}
+@media (min-width: 768px) {
+  .directions {
+    display: flex;
+    flex-direction: column;
+    background-color: #edeff6;
+    padding-top: 92px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'BloggerSans';
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+    position: relative;
+    margin-top: -50px;
+    border-radius: 0 0 30px 30px;
+    z-index: 5;
+    .directions__title {
+      padding-left: 35px;
+      padding-right: 127px;
+    }
+    .directions__discription {
+      padding-left: 35px;
+      width: 372px;
+      font-size: 28px;
+      line-height: 33px;
+    }
+    .direction__show-countries {
+      margin-left: 35px;
+      width: 618px;
+    }
+  }
+  .direction-list {
+    padding: 0 35px;
+  }
+  .direction-list__item {
+    a {
+      flex-direction: row-reverse;
+      border-radius: 20px;
+    }
+  }
+  .direction__options {
+    margin-top: 0;
+    margin-right: -20px;
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .direction__logo {
+    width: 206px;
+    height: 140px;
+    border-radius: 20px;
+  }
+  .direction__country {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 6px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 47px;
+      background-image: url();
+      background-color: grey;
+      border-radius: 4px;
+      top: -16px;
+      right: -35px;
+    }
+  }
+  .direction__slogan {
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .direction__followers {
+    position: relative;
+    top: 18px;
+    left: 32px;
+    font-size: 20px;
+    line-height: 30px;
+    &::before {
+      width: 21px;
+      height: 20px;
+      left: -32px;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .directions {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 211px 60px 140px 60px;
+    max-height: 840px;
+    box-sizing: border-box;
+    top: -50px;
+    .direction__show-countries {
+      order: 2;
+      width: 270px;
+    }
+  }
+  .direction-list {
+    order: 1;
+    width: 559px;
+    height: 750px;
+  }
+  .directions__title {
+    order: 2;
+  }
+  .directions__discription {
+    order: 2;
+  }
+}
