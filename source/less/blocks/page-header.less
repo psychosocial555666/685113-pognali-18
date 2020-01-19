@@ -6,12 +6,6 @@
   justify-content: space-between;
   box-sizing: border-box;
   position: relative;
-  .logo__tablet {
-    display: none;
-  }
-  .logo__desktop {
-    display: none;
-  }
   .site-list {
     display: none;
   }
@@ -38,12 +32,6 @@
     padding: 40px 40px;
     align-items: center;
     background-color: #182044;
-    .logo__mobile {
-      display: none;
-    }
-    .logo__tablet {
-      display: block;
-    }
     .user-menu {
       position: relative;
       display: flex;
@@ -57,18 +45,19 @@
       display: none;
     }
   }
+  .page-header--inner {
+    background-color: #161c35;
+  }
+  .logo__mobile {
+    width: 166px;
+    height: 42px;
+  }
 }
 
 @media (min-width: 1440px) {
   .page-header {
     background-color: #161c36;
     padding: 50px 60px;
-    .logo__desktop {
-      display: block;
-    }
-    .logo__tablet {
-      display: none;
-    }
     .user-menu__item--call-us {
       display: block;
     }
@@ -115,5 +104,9 @@
         top: 25px;
       }
     }
+  }
+  .logo__mobile {
+    width: 200px;
+    height: 52px;
   }
 }
