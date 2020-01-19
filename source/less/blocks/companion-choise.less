@@ -45,7 +45,6 @@
   height: 70px;
   background-color: #edeff6;
   border-radius: 50%;
-  background-image: url(../img/firsova-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;
   margin-right: 16px;
@@ -53,6 +52,7 @@
 }
 .likes {
   position: absolute;
+  width: 50px;
   top: 50px;
   left: 87px;
   cursor: pointer;
@@ -72,10 +72,33 @@
     top: -8px;
     left: -40px;
   }
+  &:hover {
+    &::before {
+      background-color: #e2e5f2;
+      opacity: 0.7;
+    }
+  }
+  &:active {
+    &::before {
+      opacity: 0.1;
+    }
+  }
 }
 .like-active {
   &::before {
     background-image: url(../img/heart-active.svg);
+    opacity: 1;
+  }
+  &:hover {
+    &::before {
+      background-color: #f9d8d8;
+      opacity: 1;
+    }
+  }
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
   }
 }
 .call-button {
@@ -90,6 +113,14 @@
   font-weight: 800;
   color: #161c35;
   text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    background-color: #ffbd30;
+  }
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
 }
 .country-information {
   p {
@@ -113,8 +144,7 @@
   margin-bottom: 10px;
   padding-left: 40px;
   position: relative;
-  &::before {
-    content: "";
+  svg {
     width: 26px;
     height: 18px;
     border-radius: 2px;
@@ -162,7 +192,7 @@
     font-size: 24px;
     border: 3px solid #ff8d30;
     text-align: center;
-    padding-top: 8px;
+    padding-top: 5px;
     box-sizing: border-box;
   }
 }
@@ -182,6 +212,8 @@
   position: relative;
   margin-bottom: 25px;
   margin-top: 15px;
+  outline: none;
+  cursor: pointer;
   &::before {
     content: "";
     width: 18px;
@@ -192,6 +224,12 @@
     background-image: url(../img/qty-plus-mobile.svg);
     background-position: 0 0;
     background-repeat: no-repeat;
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
   }
 }
 .page-nav-wrapper {
@@ -212,6 +250,8 @@
   height: 50px;
   padding: 0;
   position: relative;
+  outline: none;
+  cursor: pointer;
   &::before {
     content: "";
     width: 10px;
@@ -230,10 +270,30 @@
   &::before {
     background-image: url(../img/triangle-arrow-left.svg);
   }
+  &:hover {
+    &::before {
+      opacity: 0.6;
+    }
+  }
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
+  }
 }
 .control-forward {
   &::before {
     background-image: url(../img/triangle-arrow-right.svg);
+  }
+  &:hover {
+    &::before {
+      opacity: 0.6;
+    }
+  }
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
   }
 }
 @media (min-width: 768px) {
@@ -267,7 +327,6 @@
     width: 190px;
     height: 190px;
     border-radius: 20px;
-    background-image: url(../img/firsova-tablet@1x.jpg);
     margin-right: 35px;
   }
   .likes {
@@ -280,7 +339,7 @@
       width: 50px;
       height: 50px;
       background-size: 20px 17px;
-      top: -15px;
+      top: -11px;
       left: -60px;
     }
   }
@@ -297,7 +356,7 @@
     font-size: 20px;
     padding-left: 47px;
     margin-right: 25px;
-    &::before {
+    svg {
       width: 35px;
       height: 24px;
     }
@@ -383,14 +442,25 @@
     }
   }
   .page-nav__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50px;
     height: 50px;
-    padding: 20px;
     box-sizing: border-box;
     border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      background-color: #ffd74b;
+      opacity: 1;
+    }
   }
   .page-nav__item--active {
     background-color: #ffd74b;
+    opacity: 1;
   }
 }
 @media (min-width: 1440px) {
@@ -400,6 +470,7 @@
     padding-right: 85px;
     width: 1095px;
     box-sizing: border-box;
+    margin-top: -50px;
   }
   .companion-card {
     padding: 0;
@@ -412,7 +483,6 @@
     width: 285px;
     height: 285px;
     border-radius: 20px 0 0 20px;
-    background-image: url(../img/firsova-desktop@1x.jpg);
     margin-right: 60px;
   }
   .general-infomation {

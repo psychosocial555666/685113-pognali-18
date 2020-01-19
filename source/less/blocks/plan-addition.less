@@ -114,6 +114,12 @@
   cursor: pointer;
   opacity: 0.3;
   box-sizing: border-box;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.1;
+  }
 }
 .more {
   background-image: url(../img/qty-plus-mobile.svg);
@@ -128,6 +134,17 @@
     font-size: 16px;
     font-weight: 300;
     color: #444444;
+    &:hover {
+      &::before {
+        border: solid 1px #959bb2;
+      }
+    }
+    &:active {
+      &::before {
+        opacity: 0.3;
+        background-color: #959bb2;
+      }
+    }
     &::before {
       content: "";
       position: absolute;
@@ -230,12 +247,18 @@
 .date-active {
   color: white;
   background-color: #1d2e5b;
+  &:hover {
+    border: 2px solid #ff5c23;
+  }
 }
 .date-selected {
-  border: 2px solid red;
+  border: 2px solid #ff5c23;
 }
 .date-possible {
   background-color: #edeff6;
+  &:hover {
+    border: 2px solid #ff5c23;
+  }
 }
 .button-small {
   text-transform: uppercase;
@@ -323,6 +346,9 @@
     box-shadow: 0 0 15px 15px white;
     cursor: pointer;
   }
+  &:hover {
+    border: solid 1px #959bb2;
+  }
 }
 .selector-flag {
   width: 50px;
@@ -336,8 +362,12 @@
 .flag {
   width: 35px;
   height: 24px;
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: grey;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 }
 .selector-close {
   position: absolute;
@@ -401,6 +431,9 @@
   .flag {
     margin-left: auto;
     box-shadow: 0 0 8px 21px white;
+    svg {
+      margin-left: auto;
+    }
   }
 }
 .fun-country {
@@ -415,11 +448,19 @@
   font-family: 'BloggerSans';
   font-size: 16px;
   font-weight: 300;
-  color: #444444;
+  color: rgba(68, 68, 68, 0.3);
   padding: 15px;
   margin-bottom: 15px;
   width: 100%;
   resize: none;
+  outline: none;
+  &:hover {
+    border: solid 1px #959bb2;
+  }
+  &:active, &:focus {
+    border: solid 1px #161c35;
+    color: #444444;
+  }
 }
 .fun-point {
   width: 6px;
@@ -816,8 +857,7 @@
       padding-left: 13px;
       padding-top: 13px;
       position: relative;
-    }
-    .date-active {
+      box-sizing: border-box;
     }
   }
   .date-intrance {
@@ -840,6 +880,9 @@
   }
   .date-possible {
     outline: 1px solid #d4d9eb;
+    &:hover {
+      outline: 2px solid #ff5c23;
+    }
   }
   .country-selected {
     width: 730px;
