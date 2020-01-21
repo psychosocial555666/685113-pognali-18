@@ -2,14 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Погнали</title>
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
   </head>
-
   <body>
-    <div style="display:none">
-      <include src="build/img/sprite.svg"></include>
-    </div>
     <svg style="display: none;">
       <symbol id="toogle-close">
         <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3
@@ -181,123 +178,121 @@
         <g fill-rule="nonzero" fill="none"><path d="M7 47.61h57.77A6.64 6.64 0 0 0 70.16 44H1.6A6.64 6.64 0 0 0 7 47.61z" fill="#ED5565"></path><path d="M.91 40.38v1.34a6.59 6.59 0 0 0 .68 2.27h68.55a6.59 6.59 0 0 0 .68-2.27v-1.34H.91z" fill="#FFF"></path><path fill="#ED5565" d="M.91 36.77h69.92v3.61H.91z"></path><path fill="#FFF" d="M.91 33.16h69.92v3.61H.91z"></path><path fill="#ED5565" d="M.91 29.55h69.92v3.61H.91z"></path><path fill="#FFF" d="M.91 25.94h69.92v3.61H.91z"></path><path fill="#ED5565" d="M.91 22.33h69.92v3.61H.91z"></path><path fill="#FFF" d="M.91 18.72h69.92v3.61H.91z"></path><path fill="#ED5565" d="M.91 15.11h69.92v3.61H.91z"></path><path fill="#FFF" d="M.91 11.49h69.92v3.61H.91z"></path><path fill="#ED5565" d="M.91 7.88h69.92v3.61H.91z"></path><path d="M70.83 7.88V6.54a6.59 6.59 0 0 0-.68-2.28H1.6a6.59 6.59 0 0 0-.68 2.28v1.34h69.91z" fill="#FFF"></path><path d="M64.76.66H7a6.64 6.64 0 0 0-5.39 3.61h68.55a6.64 6.64 0 0 0-5.4-3.61z" fill="#ED5565"></path><path d="M34.09 25.94V.66H7A6.64 6.64 0 0 0 .93 6.55v19.39h33.16z" fill="#4A89DC"></path><path fill="#FFF" d="M5.02 3.72l-.27.84h-.88l.71.51-.27.84.71-.52.71.52-.27-.84.71-.51h-.88zM5.02 7.96l-.27.84h-.88l.71.52-.27.83.71-.51.71.51-.27-.83.71-.52h-.88zM5.02 12.2l-.27.84h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52h-.88zM5.02 16.45l-.27.83h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52h-.88zM5.29 21.52l-.27-.83-.27.83h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52zM7.51 5.84l-.27.84h-.88l.71.52-.27.83.71-.52.72.52-.27-.83.71-.52h-.88zM7.51 10.08l-.27.84h-.88l.71.52-.27.83.71-.51.72.51-.27-.83.71-.52h-.88zM7.51 14.33l-.27.83h-.88l.71.52-.27.84.71-.52.72.52-.27-.84.71-.52h-.88zM7.79 19.4l-.28-.83-.27.83h-.88l.71.52-.27.84.71-.52.72.52-.27-.84.71-.52zM10.01 3.72l-.27.84h-.88l.71.51-.27.84.71-.52.71.52-.27-.84.71-.51h-.88zM10.01 7.96l-.27.84h-.88l.71.52-.27.83.71-.51.71.51-.27-.83.71-.52h-.88zM10.01 12.2l-.27.84h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52h-.88zM10.01 16.45l-.27.83h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52h-.88zM10.28 21.52l-.27-.83-.27.83h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52zM12.5 5.84l-.27.84h-.88l.71.52-.27.83.71-.52.72.52-.27-.83.71-.52h-.88zM12.5 10.08l-.27.84h-.88l.71.52-.27.83.71-.51.72.51-.27-.83.71-.52h-.88zM12.5 14.33l-.27.83h-.88l.71.52-.27.84.71-.52.72.52-.27-.84.71-.52h-.88zM12.78 19.4l-.28-.83-.27.83h-.88l.71.52-.27.84.71-.52.72.52-.27-.84.71-.52zM15 3.72l-.27.84h-.88l.71.51-.27.84.71-.52.71.52-.27-.84.71-.51h-.88zM15 7.96l-.27.84h-.88l.71.52-.27.83.71-.51.71.51-.27-.83.71-.52h-.88zM15 12.2l-.27.84h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52h-.88zM15 16.45l-.27.83h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52h-.88zM15.27 21.52l-.27-.83-.27.83h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52zM17.49 5.84l-.27.84h-.88l.71.52-.27.83.71-.52.72.52-.28-.83.72-.52h-.88zM17.49 10.08l-.27.84h-.88l.71.52-.27.83.71-.51.72.51-.28-.83.72-.52h-.88zM17.49 14.33l-.27.83h-.88l.71.52-.27.84.71-.52.72.52-.28-.84.72-.52h-.88zM17.77 19.4l-.28-.83-.27.83h-.88l.71.52-.27.84.71-.52.72.52-.28-.84.72-.52zM19.99 3.72l-.27.84h-.88l.71.51-.27.84.71-.52.71.52-.27-.84.71-.51h-.88zM19.99 7.96l-.27.84h-.88l.71.52-.27.83.71-.51.71.51-.27-.83.71-.52h-.88zM19.99 12.2l-.27.84h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52h-.88zM19.99 16.45l-.27.83h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52h-.88zM20.26 21.52l-.27-.83-.27.83h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52zM22.48 5.84l-.27.84h-.88l.71.52-.27.83.71-.52.72.52-.28-.83.72-.52h-.88zM22.48 10.08l-.27.84h-.88l.71.52-.27.83.71-.51.72.51-.28-.83.72-.52h-.88zM22.48 14.33l-.27.83h-.88l.71.52-.27.84.71-.52.72.52-.28-.84.72-.52h-.88zM22.76 19.4l-.28-.83-.27.83h-.88l.71.52-.27.84.71-.52.72.52-.28-.84.72-.52zM24.98 3.72l-.27.84h-.88l.71.51-.27.84.71-.52.71.52-.27-.84.71-.51h-.88zM24.98 7.96l-.27.84h-.88l.71.52-.27.83.71-.51.71.51-.27-.83.71-.52h-.88zM24.98 12.2l-.27.84h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52h-.88zM24.98 16.45l-.27.83h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52h-.88zM25.25 21.52l-.27-.83-.27.83h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52zM27.47 5.84l-.27.84h-.88l.71.52-.27.83.71-.52.72.52-.28-.83.72-.52h-.88zM27.47 10.08l-.27.84h-.88l.71.52-.27.83.71-.51.72.51-.28-.83.72-.52h-.88zM27.47 14.33l-.27.83h-.88l.71.52-.27.84.71-.52.72.52-.28-.84.72-.52h-.88zM27.75 19.4l-.28-.83-.27.83h-.88l.71.52-.27.84.71-.52.72.52-.28-.84.72-.52zM29.53 5.07l-.27.84.71-.52.71.52-.27-.84.71-.51h-.88l-.27-.84-.27.84h-.88zM29.97 7.96l-.27.84h-.88l.71.52-.27.83.71-.51.71.51-.27-.83.71-.52h-.88zM29.97 12.2l-.27.84h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52h-.88zM29.97 16.45l-.27.83h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52h-.88zM30.24 21.52l-.27-.83-.27.83h-.88l.71.52-.27.84.71-.52.71.52-.27-.84.71-.52z"></path></g>
       </symbol>
     </svg>
-    <section class="toogle-menu">
-      <a class="logo page-header__logo toogle-logo">
-        <picture>
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
-          <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-          <img class="logo__mobile" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="20" alt="Погнали?">
-        </picture>
-      </a>
-      <div class="toogle-nav">
-        <button class="toggle-close" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg width="18" height="18">
-            <use xlink:href="#toogle-close"></use>
-          </svg>
-        </button>
-      </div>
-      <ul class="toogle-nav-list">
-        <li class="toogle-nav-list__item"> <a href="#">О сервисе</a> </li>
-        <li class="toogle-nav-list__item"> <a href="#">Направления</a> </li>
-        <li class="toogle-nav-list__item"> <a href="#">Попутчики</a> </li>
-      </ul>
-      <button class="button-small toogle-autorization" type="button" name="button">Авторизация</button>
-      <div class="toogle-contact-wrapper">
-        <a href="tel:88005558628" class="toogle__tel">
-          <span>
-            <svg width="18" height="18" viewBox="0 0 36 36">
-              <use xlink:href="#tel"></use>
-            </svg>
-          </span>
-          8 800 555-86-28
+    <header class="page-header menu-opened">
+      <div class="page-header-top">
+        <a class="logo page-header__logo">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+            <img class="logo__mobile" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Погнали?">
+          </picture>
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img class="logo__mobile-opened" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="20" alt="Погнали?">
+          </picture>
         </a>
-        <a href="#" class="toogle__email">
-          <span>
-            <svg width="18" height="13" viewBox="0 0 36 26">
-              <use xlink:href="#email"></use>
+        <nav class="main-nav">
+          <button class="main-nav__toggle toogle-opened" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg width="25" height="11" viewBox="0 0 25 11">
+              <use xlink:href="#toogle-open"></use>
             </svg>
-          </span>
-          mail@htmlacademy.ru
-        </a>
-      </div>
-      <div class="toogle-socials">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <svg width="11" height="21" viewBox="0 0 11 21">
-                <use xlink:href="#facebook"></use>
+          </button>
+          <button class="main-nav__toggle toogle-closed" type="button">
+            <span class="visually-hidden">Закрыть меню</span>
+            <svg width="19" height="19" viewBox="0 0 19 19">
+              <use xlink:href="#toogle-close"></use>
+            </svg>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"> <a href="#">О сервисе</a> </li>
+            <li class="site-list__item"> <a href="form.html">Направления</a> </li>
+            <li class="site-list__item"> <a href="catalog.html">Попутчики</a> </li>
+          </ul>
+        </nav>
+        <ul class="user-menu">
+          <li class="user-menu__item user-menu__item--call-us">
+            <button>
+              <span class="visually-hidden">Позвонить нам!</span>
+              <svg viewBox="0 0 18 18">
+              <style type="text/css">
+                .st0{fill:#161c35;}
+              </style>
+              <use xlink:href="#phone"></use>
               </svg>
-              <span class="visually-hidden">Мы в Фейсбуке</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <svg width="23" height="12" viewBox="0 0 30 15.8">
-                <use xlink:href="#vk"></use>
+            </button> </li>
+          <li class="user-menu__item user-menu__item--write-us">
+            <button>
+              <span class="visually-hidden">Напишите нам!</span>
+              <svg viewBox="0 0 18 14" >
+              <style type="text/css">
+                .st0{fill:#161c35;}
+              </style>
+              <use xlink:href="#message"></use>
               </svg>
-              <span class="visually-hidden">Мы в Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-              <svg width="18" height="18" viewBox="0 0 23 23">
-                <use xlink:href="#instagram"></use>
-              </svg>
-              <span class="visually-hidden">Мы в Инстаграме</span>
-            </a>
-          </li>
+            </button> </li>
+          <li class="user-menu__item user-menu__item--authorization"> <button>Авторизация</button> </li>
         </ul>
       </div>
-    </section>
-    <header class="page-header">
-      <a class="logo page-header__logo">
-        <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
-          <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
-          <img class="logo__mobile" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Погнали?">
-        </picture>
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
-          <use xlink:href="#toogle-open"></use>
-          </svg>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"> <a href="#">О сервисе</a> </li>
-          <li class="site-list__item"> <a href="#">Направления</a> </li>
-          <li class="site-list__item"> <a href="#">Попутчики</a> </li>
+      <section class="toogle-menu">
+        <h3 class="visually-hidden">Выпадающее меню</h3>
+        <ul class="toogle-nav-list">
+          <li class="toogle-nav-list__item"> <a href="#">О сервисе</a> </li>
+          <li class="toogle-nav-list__item"> <a href="form.html">Направления</a> </li>
+          <li class="toogle-nav-list__item"> <a href="catalog.html">Попутчики</a> </li>
         </ul>
-      </nav>
-      <ul class="user-menu">
-        <li class="user-menu__item user-menu__item--call-us">
-          <button href="#">
-            <span class="visually-hidden">Позвонить нам!</span>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
-            <style type="text/css">
-              .st0{fill:#161c35;}
-            </style>
-            <use xlink:href="#phone"></use>
-            </svg>
-          </button> </li>
-        <li class="user-menu__item user-menu__item--write-us">
-          <button href="#">
-            <span class="visually-hidden">Напишите нам!</span>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
-            <style type="text/css">
-              .st0{fill:#161c35;}
-            </style>
-            <use xlink:href="#message"></use>
-            </svg>
-          </button> </li>
-        <li class="user-menu__item user-menu__item--authorization"> <button href="#">Авторизация</button> </li>
-      </ul>
+        <div class="toogle-contact-wrapper">
+          <a href="tel:88005558628" class="toogle__tel">
+            <span>
+              <svg width="18" height="18" viewBox="0 0 36 36">
+                <use xlink:href="#tel"></use>
+              </svg>
+            </span>
+            8 800 555-86-28
+          </a>
+          <a href="#" class="toogle__email">
+            <span>
+              <svg width="18" height="13" viewBox="0 0 36 26">
+                <use xlink:href="#email"></use>
+              </svg>
+            </span>
+            mail@htmlacademy.ru
+          </a>
+        </div>
+        <div class="toogle-socials">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <svg width="11" height="21" viewBox="0 0 11 21">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <svg width="23" height="12" viewBox="0 0 30 15.8">
+                  <use xlink:href="#vk"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                <svg width="18" height="18" viewBox="0 0 23 23">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+                <span class="visually-hidden">Мы в Инстаграме</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </header>
     <main class="page-main">
       <section class="intro">
@@ -315,7 +310,6 @@
           <li class="features-list__item">Путешествуйте <br>вместе!</li>
         </ul>
       </section>
-
       <section class="service-about">
         <div class="service-about__wrapper">
           <h2 class="service-about__title title">О сервисе</h2>
@@ -333,12 +327,12 @@
           <li class="direction-list__item">
             <a href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img\thailand-desktop@1x.webp 1x, img\thailand-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img\thailand-desktop@1x.webp 1x, img\thailand-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="img\thailand-mobile@1x.webp 1x, img\thailand-mobile@2x.webp 2x">
-                <source media="(min-width: 1440px)" srcset="img\thailand-desktop@1x.jpg 1x, img\thailand-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img\thailand-desktop@1x.jpg 1x, img\thailand-desktop@2x.jpg 2x">
-                <img class="direction__logo" src="img\thailand-mobile@1x.jpg" srcset="img\thailand-mobile@2x.jpg 2x" width="270" height="110" alt="Тайланд">
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/thailand-desktop@1x.webp 1x, img/thailand-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-desktop@1x.webp 1x, img/thailand-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/thailand-mobile@1x.webp 1x, img/thailand-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
+                <img class="direction__logo" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@2x.jpg 2x" width="270" height="110" alt="Тайланд">
               </picture>
               <div class="direction__options">
                 <b class="direction__country direction__country--thai">Таиланд</b>
@@ -350,12 +344,12 @@
           <li class="direction-list__item">
             <a href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img\france-desktop@1x.webp 1x, img\france-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img\france-desktop@1x.webp 1x, img\france-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="img\france-mobile@1x.webp 1x, img\france-mobile@2x.webp 2x">
-                <source media="(min-width: 1440px)" srcset="img\france-desktop@1x.jpg 1x, img\france-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img\france-desktop@1x.jpg 1x, img\france-desktop@2x.jpg 2x">
-                <img class="direction__logo" src="img\france-mobile@1x.jpg" srcset="img\france-mobile@2x.jpg 2x" width="270" height="110" alt="Тайланд">
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/france-desktop@1x.webp 1x, img/france-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/france-desktop@1x.webp 1x, img/france-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/france-mobile@1x.webp 1x, img/france-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg 1x, img/france-desktop@2x.jpg 2x">
+                <img class="direction__logo" src="img/france-mobile@1x.jpg" srcset="img/france-mobile@2x.jpg 2x" width="270" height="110" alt="Тайланд">
               </picture>
               <div class="direction__options">
                 <b class="direction__country direction__country--france">Франция</b>
@@ -367,12 +361,12 @@
           <li class="direction-list__item">
             <a href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img\czech-desktop@1x.webp 1x, img\czech-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img\czech-desktop@1x.webp 1x, img\czech-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="img\czech-mobile@1x.webp 1x, img\czech-mobile@2x.webp 2x">
-                <source media="(min-width: 1440px)" srcset="img\czech-desktop@1x.jpg 1x, img\czech-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img\czech-desktop@1x.jpg 1x, img\czech-desktop@2x.jpg 2x">
-                <img class="direction__logo" src="img\czech-mobile@1x.jpg" width="270" height="110" alt="Тайланд">
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/czech-desktop@1x.webp 1x, img/czech-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-desktop@1x.webp 1x, img/czech-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/czech-mobile@1x.webp 1x, img/czech-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
+                <img class="direction__logo" src="img/czech-mobile@1x.jpg" width="270" height="110" alt="Тайланд">
               </picture>
               <div class="direction__options">
                 <b class="direction__country direction__country--czech">Чехия</b>
@@ -384,7 +378,6 @@
         </ul>
         <button class="direction__show-countries button" type="button" name="button">Показать все</button>
       </section>
-
       <section class="companions">
         <h2 class="companions__title title">Попутчики</h2>
         <p class="companions__intro">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга. </p>
@@ -392,12 +385,12 @@
         <ul class="companions-list">
           <li class="companions-list__item">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img\firsova-desktop@1x.webp 1x, img\firsova-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img\firsova-tablet@1x.webp 1x, img\firsova-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img\firsova-mobile@1x.webp 1x, img\firsova-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)" srcset="img\firsova-desktop@1x.jpg 1x, img\firsova-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img\firsova-tablet@1x.jpg 1x, img\firsova-tablet@2x.jpg 2x">
-              <img class="companion__foto" src="img\firsova-mobile@1x.jpg" srcset="img\firsova-mobile@2x.jpg 2x" width="270" height="270" alt="Таня Фирсова-фото">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+              <img class="companion__foto" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="270" height="270" alt="Таня Фирсова-фото">
             </picture>
             <div class="companion__level">
               <span>99</span>
@@ -433,7 +426,7 @@
               <ul class="transport-list">
                 <li class="transport-list__item transport-list__item--plane transport-list__item--active">
                   <a href="#">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                    <svg viewBox="0 0 19 21">
                       <use xlink:href="#plane"></use>
                     </svg>
                     <span class="visually-hidden"> Автотранспорт </span>
@@ -441,7 +434,7 @@
               </li>
                 <li class="transport-list__item transport-list__item--bus">
                   <a href="#">
-                    <svg version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                    <svg viewBox="0 0 17 21">
                       <use xlink:href="#bus"></use>
                     </svg>
                     <span class="visually-hidden"> Авиаперелет </span>
@@ -449,7 +442,7 @@
                 </li>
                 <li class="transport-list__item transport-list__item--bike">
                   <a href="#">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                    <svg viewBox="0 0 24 21">
                       <use xlink:href="#bike"></use>
                     </svg>
                     <span class="visually-hidden"> Велосипед </span>
@@ -457,7 +450,7 @@
                 </li>
                 <li class="transport-list__item transport-list__item--run">
                   <a href="#">
-                    <svg version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                    <svg viewBox="0 0 20 21">
                       <use xlink:href="#walk"></use>
                     </svg>
                     <span class="visually-hidden"> Пешком </span>
@@ -468,12 +461,12 @@
           </li>
           <li class="companions-list__item">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img\demin-desktop@1x.webp 1x, img\demin-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img\demin-tablet@1x.webp 1x, img\demin-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img\demin-mobile@1x.webp 1x, img\demin-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)" srcset="img\demin-desktop@1x.jpg 1x, img\demin-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img\demin-tablet@1x.jpg 1x, img\demin-tablet@2x.jpg 2x">
-              <img class="companion__foto" src="img\demin-mobile@1x.jpg" srcset="img\demin-mobile@2x.jpg 2x" width="270" height="270" alt="Петя Демин-фото">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+              <img class="companion__foto" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="270" height="270" alt="Петя Демин-фото">
             </picture>
             <div class="companion__level">
               <span>80</span>
@@ -503,7 +496,7 @@
               <ul class="transport-list">
                 <li class="transport-list__item transport-list__item--plane transport-list__item--active">
                   <a href="#">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                    <svg viewBox="0 0 19 21">
                       <use xlink:href="#plane"></use>
                     </svg>
                     <span class="visually-hidden"> Автотранспорт </span>
@@ -511,7 +504,7 @@
               </li>
                 <li class="transport-list__item transport-list__item--bus transport-list__item--active">
                   <a href="#">
-                    <svg version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                    <svg viewBox="0 0 17 21">
                       <use xlink:href="#bus"></use>
                     </svg>
                     <span class="visually-hidden"> Авиаперелет </span>
@@ -519,7 +512,7 @@
                 </li>
                 <li class="transport-list__item transport-list__item--bike">
                   <a href="#">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                    <svg viewBox="0 0 24 21">
                       <use xlink:href="#bike"></use>
                     </svg>
                     <span class="visually-hidden"> Велосипед </span>
@@ -527,7 +520,7 @@
                 </li>
                 <li class="transport-list__item transport-list__item--run transport-list__item--active">
                   <a href="#">
-                    <svg version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                    <svg viewBox="0 0 20 21">
                       <use xlink:href="#walk"></use>
                     </svg>
                     <span class="visually-hidden"> Пешком </span>
@@ -538,7 +531,7 @@
           </li>
         </ul>
         <a href="catalog.html" class="companions__show-all button">Показать всех</a>
-        <div class="profile-popup">
+        <div class="profile-popup profile-popup-closed">
           <h2 class="profile-popup__title title">Бизнес-тарифы</h2>
           <table class="rates-table">
             <tr>
@@ -561,7 +554,6 @@
           <button class="profile-popup-close" type="button" name="button">Закрыть окно</button>
         </div>
       </section>
-
       <section class="profile">
         <h2 class="profile__title title">Добавьте свой профиль</h2>
         <ul class="profile-list">
@@ -576,12 +568,11 @@
         </ul>
         <a href="#" class="profile__rates">Показать тарифы для бизнеса</a>
       </section>
-
       <section class="user-login">
         <h2 class="user-login__title title">Заинтересовались?</h2>
         <p class="user-login__discription"> Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="form.html" class="login-link">авторизуйтесь.</a> </p>
         <p class="user-login__intrance">
-          <input type="text" name="" value="E-mail">
+          <input type="text" value="E-mail">
           <button class="button" type="submit" name="button"></button>
         </p>
         <div class="questions">
@@ -589,7 +580,7 @@
           <div class="questions__wrapper">
             <a href="tel:88005558628" class="questions__tel">
               <span>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                <svg viewBox="0 0 36 36">
                   <use xlink:href="#tel"></use>
                 </svg>
               </span>
@@ -597,7 +588,7 @@
             </a>
             <a href="#" class="questions__email">
               <span>
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                <svg viewBox="0 0 36 26">
                   <use xlink:href="#email"></use>
                 </svg>
               </span>
@@ -606,13 +597,12 @@
           </div>
         </div>
       </section>
-
       <section class="find-us">
         <div class="find-us__wrapper">
           <h2 class="visually-hidden">Как нас найти?</h2>
           <p class="find-us__adress">
             <span>
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28 43" style="enable-background:new 0 0 28 43;" xml:space="preserve">
+              <svg viewBox="0 0 28 43">
               <use xlink:href="#location"></use>
               </svg>
             </span>
@@ -620,7 +610,7 @@
           </p>
           <button class="find-us__button button" type="button" name="button">Проложить маршрут</button>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003006!2d30.32085871595745!3d59.938719169054345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573406557218!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003006!2d30.32085871595745!3d59.938719169054345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573406557218!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
       </section>
     </main>
     <footer class="page-footer">
@@ -637,7 +627,7 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11" height="21" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
+              <svg width="11" height="21" viewBox="0 0 11 21">
               <use xlink:href="#facebook"></use>
               </svg>
               <span class="visually-hidden">Мы в Фейсбуке</span>
@@ -645,7 +635,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23" height="12" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+              <svg width="23" height="12" viewBox="0 0 30 15.8">
               <use xlink:href="#vk"></use>
               </svg>
               <span class="visually-hidden">Мы в Вконтакте</span>
@@ -653,7 +643,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+              <svg width="18" height="18" viewBox="0 0 23 23">
                 <use xlink:href="#instagram"></use>
               </svg>
               <span class="visually-hidden">Мы в Инстаграме</span>
@@ -663,12 +653,14 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="34" viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
+          <svg width="27" height="34" viewBox="0 0 27 34">
             <use xlink:href="#academy"></use>
           </svg>
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
     </footer>
+    <script src="js/script.js">
+    </script>
   </body>
 </html>

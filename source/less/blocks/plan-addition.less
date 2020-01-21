@@ -228,7 +228,7 @@
     width: 30px;
     height: 30px;
     box-sizing: border-box;
-    border: 1px solid #d4d9eb;
+    box-shadow: 0 0 0 1px #d4d9eb inset;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -238,7 +238,7 @@
     cursor: pointer;
   }
   .date-selected {
-    border: 2px solid #ff5c23;
+    box-shadow: 0 0 0 2px #ff5c23 inset;
   }
 }
 .date-disabled {
@@ -248,16 +248,16 @@
   color: white;
   background-color: #1d2e5b;
   &:hover {
-    border: 2px solid #ff5c23;
+    box-shadow: 0 0 0 2px #ff5c23 inset;
   }
 }
 .date-selected {
-  border: 2px solid #ff5c23;
+  box-shadow: 0 0 0 2px #ff5c23 inset;
 }
 .date-possible {
   background-color: #edeff6;
   &:hover {
-    border: 2px solid #ff5c23;
+    box-shadow: 0 0 0 2px #ff5c23 inset;
   }
 }
 .button-small {
@@ -325,6 +325,7 @@
   text-transform: uppercase;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
   p {
     margin: 0;
     padding: 0;
@@ -349,6 +350,14 @@
   &:hover {
     border: solid 1px #959bb2;
   }
+}
+.popup-selected {
+  &:hover {
+    border: none;
+  }
+}
+.country-select-popup-closed {
+  display: none;
 }
 .selector-flag {
   width: 50px;
@@ -532,7 +541,7 @@
         content: '';
         width: 2px;
         height: 370px;
-        background-color: #cbced9;
+        background: linear-gradient(to bottom, #cbced9, #fff);;
         position: absolute;
         bottom: -370px;
         right: 135px;
@@ -653,9 +662,6 @@
     td {
       height: 70px;
       font-size: 20px;
-    }
-    .date-selected {
-      border-width: 4px;
     }
   }
   .country-selector {
@@ -876,12 +882,6 @@
       position: absolute;
       bottom: 11px;
       left: 11px;
-    }
-  }
-  .date-possible {
-    outline: 1px solid #d4d9eb;
-    &:hover {
-      outline: 2px solid #ff5c23;
     }
   }
   .country-selected {
