@@ -1,17 +1,22 @@
 .page-header {
   background-color: #161c36;
   width: 100%;
-  padding: 27px 25px;
+  padding-top: 27px;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   box-sizing: border-box;
   position: relative;
+  .logo__mobile-opened {
+    display: none;
+  }
   .site-list {
     display: none;
   }
   .user-menu {
     position: absolute;
-    top: 395px;
+    top: 370px;
   }
   .main-nav__toggle {
     padding: 0;
@@ -19,7 +24,60 @@
     background-color: inherit;
     border: none;
     cursor: pointer;
+    outline: none;
   }
+  .toogle-opened {
+    display: block;
+    fill: white;
+  }
+  .toogle-closed {
+    display: none;
+  }
+  .toogle-menu {
+    display: none;
+  }
+}
+
+.menu-opened {
+  background-color: white;
+  .logo__mobile-opened {
+    display: block;
+  }
+  .logo__mobile {
+    display: none;
+  }
+  .toogle-opened {
+    display: none;
+  }
+  .toogle-closed {
+    display: block;
+    width: 19px;
+    height: 19px;
+    opacity: 0.3;
+    &:hover {
+      opacity: 1;
+    }
+    &:active {
+      opacity: 0.1;
+    }
+  }
+  .toogle-menu {
+    display: block;
+  }
+  .user-menu {
+    position: absolute;
+    top: 805px;
+  }
+}
+
+.page-header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  padding-bottom: 27px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
 }
 .page-header--inner, .page-header--pageform {
   .user-menu {
@@ -29,7 +87,7 @@
 
 @media (min-width: 768px) {
   .page-header {
-    padding: 40px 40px;
+    padding-top: 40px;
     align-items: center;
     background-color: #182044;
     .user-menu {
@@ -44,6 +102,14 @@
     .user-menu__item--write-us {
       display: none;
     }
+    .toogle-menu {
+      display: none;
+    }
+  }
+  .page-header-top {
+    padding: 0 40px;
+    padding-bottom: 40px;
+    align-items: center;
   }
   .page-header--inner {
     background-color: #161c35;
@@ -51,6 +117,35 @@
   .logo__mobile {
     width: 166px;
     height: 42px;
+  }
+  .menu-opened {
+    background-color: white;
+    .logo__mobile-opened {
+      display: block;
+      width: 166px;
+      height: 42px;
+    }
+    .logo__mobile {
+      display: none;
+    }
+    .toogle-opened {
+      display: none;
+    }
+    .toogle-closed {
+      display: block;
+      width: 19px;
+      height: 19px;
+      opacity: 0.3;
+      &:hover {
+        opacity: 1;
+      }
+      &:active {
+        opacity: 0.1;
+      }
+    }
+    .toogle-menu {
+      display: block;
+    }
   }
 }
 
@@ -108,5 +203,16 @@
   .logo__mobile {
     width: 200px;
     height: 52px;
+  }
+  .menu-opened {
+    .toogle-menu {
+      display: none;
+    }
+    .logo__mobile {
+      display: block;
+    }
+    .logo__mobile-opened {
+      display: none;
+    }
   }
 }
