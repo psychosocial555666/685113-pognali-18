@@ -218,9 +218,9 @@
         </nav>
         <ul class="user-menu">
           <li class="user-menu__item user-menu__item--call-us">
-            <button href="#">
+            <button>
               <span class="visually-hidden">Позвонить нам!</span>
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+              <svg viewBox="0 0 18 18">
               <style type="text/css">
                 .st0{fill:#161c35;}
               </style>
@@ -228,19 +228,20 @@
               </svg>
             </button> </li>
           <li class="user-menu__item user-menu__item--write-us">
-            <button href="#">
+            <button>
               <span class="visually-hidden">Напишите нам!</span>
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 14" style="enable-background:new 0 0 18 14;" xml:space="preserve">
+              <svg viewBox="0 0 18 14">
               <style type="text/css">
                 .st0{fill:#161c35;}
               </style>
               <use xlink:href="#message"></use>
               </svg>
             </button> </li>
-          <li class="user-menu__item user-menu__item--authorization"> <button href="#">Авторизация</button> </li>
+          <li class="user-menu__item user-menu__item--authorization"> <button>Авторизация</button> </li>
         </ul>
       </div>
       <section class="toogle-menu">
+        <h3 class="visually-hidden">Выпадающее меню</h3>
         <ul class="toogle-nav-list">
           <li class="toogle-nav-list__item"> <a href="#">О сервисе</a> </li>
           <li class="toogle-nav-list__item"> <a href="form.html">Направления</a> </li>
@@ -299,18 +300,19 @@
         <h1 class="title section-title">Направления</h1>
       </div>
       <section class="profile-information">
+        <h3 class="visually-hidden">Информация профиля</h3>
         <div class="profile-level">
           <span>80</span>
         </div>
         <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img\demin-desktop@1x.webp 1x, img\demin-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img\demin-tablet@1x.webp 1x, img\demin-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img\demin-mobile@1x.webp 1x, img\demin-mobile@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img\demin-desktop@1x.jpg 1x, img\demin-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img\demin-tablet@1x.jpg 1x, img\demin-tablet@2x.jpg 2x">
-          <img class="profile-foto" src="img\demin-mobile@1x.jpg" srcset="img\demin-mobile@2x.jpg 2x" alt="Петя Демин-фото">
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+          <img class="profile-foto" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Петя Демин-фото">
         </picture>
-        <button class="change-foto" type="button" name="button"> <p class="button-sing-one">Сменить фото</p> <p class="button-sing-two">Фото</p></button>
+        <button class="change-foto" type="button" name="button"> <span class="button-sing-one">Сменить фото</span> <span class="button-sing-two">Фото</span></button>
         <div class="profile-tags">
           <p>Тэги</p>
           <ul class="tags-list">
@@ -326,7 +328,7 @@
           <ul class="transport-list">
             <li class="transport-list__item transport-list__item--plane transport-list__item--active">
               <a href="#">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                <svg viewBox="0 0 19 21">
                   <use xlink:href="#plane"></use>
                 </svg>
                 <span class="visually-hidden"> Автотранспорт </span>
@@ -342,7 +344,7 @@
             </li>
             <li class="transport-list__item transport-list__item--bike">
               <a href="#">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                <svg viewBox="0 0 24 21">
                   <use xlink:href="#bike"></use>
                 </svg>
                 <span class="visually-hidden"> Велосипед </span>
@@ -413,14 +415,14 @@
             </div>
           </div>
           <div class="children-possible">
-            <input class="visually-hidden" type="checkbox" id="children" name="" value="">
+            <input class="visually-hidden" type="checkbox" id="children" value="">
               <label for="children">Можно с детьми</label>
           </div>
           <div class="calendar">
             <div class="month-swith">
-              <button class="month-btn month-back" type="button" name="button"> <p class="visually-hidden">Назад</p> </button>
+              <button class="month-btn month-back" type="button" name="button"> <span class="visually-hidden">Назад</span> </button>
               <p class="month-name">Март 2019</p>
-              <button class="month-btn month-forward" type="button" name="button"> <p class="visually-hidden">Вперед</p> </button>
+              <button class="month-btn month-forward" type="button" name="button"> <span class="visually-hidden">Вперед</span> </button>
             </div>
             <table class="calendar-table">
               <tr>
@@ -509,7 +511,7 @@
                 </svg>
               </div>
             </div>
-            <button class="selector-close" type="button" name="button"> <p class="visually-hidden">Закрыть</p> </button>
+            <button class="selector-close" type="button" name="button"> <span class="visually-hidden">Закрыть</span> </button>
           </div>
           <div class="country-selector country-selector__chosen">
             <div class="country-selected">
@@ -522,7 +524,7 @@
                 </svg>
               </div>
             </div>
-            <button class="selector-close" type="button" name="button"> <p class="visually-hidden">Закрыть</p> </button>
+            <button class="selector-close" type="button" name="button"> <span class="visually-hidden">Закрыть</span> </button>
           </div>
           <div class="country-selector country-selector__select">
             <div class="country-selected">
@@ -531,7 +533,7 @@
             <div class="selector-flag">
               <div class="flag"></div>
             </div>
-            <button class="selector-close" type="button" name="button"> <p class="visually-hidden">Закрыть</p> </button>
+            <button class="selector-close" type="button" name="button"> <span class="visually-hidden">Закрыть<span> </button>
             <div class="country-select-popup country-select-popup-closed">
               <div class="country-selected popup-selected">
                 <p>Выберите страну</p>
@@ -891,11 +893,11 @@
             <div class="selector-flag">
               <div class="flag"></div>
             </div>
-            <button class="selector-close" type="button" name="button"> <p class="visually-hidden">Закрыть</p> </button>
+            <button class="selector-close" type="button" name="button"> <span class="visually-hidden">Закрыть</span> </button>
           </div>
           <div class="button-wrapper">
             <button class="button-small next-step-button" type="button" name="button">Следующий шаг</button>
-            <a class="button-small previous-step-button" type="button" name="button">На шаг назад</a>
+            <a href="#" class="button-small previous-step-button">На шаг назад</a>
           </div>
         </div>
         <div class="step step-three">
@@ -928,7 +930,7 @@
           </div>
           <div class="button-wrapper">
             <button class="button-small next-step-button" type="button" name="button">Следующий шаг</button>
-            <a class="button-small previous-step-button" type="button" name="button">На шаг назад</a>
+            <a href="#" class="button-small previous-step-button">На шаг назад</a>
           </div>
         </div>
       </section>
@@ -947,7 +949,7 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11" height="21" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
+              <svg width="11" height="21" viewBox="0 0 11 21">
               <use xlink:href="#facebook"></use>
               </svg>
               <span class="visually-hidden">Мы в Фейсбуке</span>
@@ -955,7 +957,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23" height="12" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+              <svg width="23" height="12" viewBox="0 0 30 15.8">
               <use xlink:href="#vk"></use>
               </svg>
               <span class="visually-hidden">Мы в Вконтакте</span>
@@ -963,7 +965,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+              <svg width="18" height="18" viewBox="0 0 23 23">
                 <use xlink:href="#instagram"></use>
               </svg>
               <span class="visually-hidden">Мы в Инстаграме</span>
@@ -973,42 +975,14 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="34" viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
+          <svg width="27" height="34" viewBox="0 0 27 34">
             <use xlink:href="#academy"></use>
           </svg>
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
     </footer>
-    <script type="text/javascript">
-    var pageHeader = document.querySelector(".page-header")
-    var toogleOpened = document.querySelector(".toogle-opened")
-    var toogleClosed = document.querySelector(".toogle-closed")
-    var profilePopup = document.querySelector(".profile-popup")
-    var rateOpen = document.querySelector(".profile__rates")
-    var rateClose = document.querySelector(".profile-popup-close")
-
-    pageHeader.classList.remove("menu-opened")
-
-    toogleOpened.addEventListener("click", function (evt){
-      evt.preventDefault();
-      pageHeader.classList.add("menu-opened")
-    })
-
-    toogleClosed.addEventListener("click", function (evt){
-      evt.preventDefault();
-      pageHeader.classList.remove("menu-opened")
-    })
-
-    rateOpen.addEventListener("click", function (evt){
-      evt.preventDefault();
-      profilePopup.classList.remove("profile-popup-closed")
-    })
-
-    rateClose.addEventListener("click", function (evt){
-      evt.preventDefault();
-      profilePopup.classList.add("profile-popup-closed")
-    })
+    <script src="js/script.js">
     </script>
   </body>
 </html>
