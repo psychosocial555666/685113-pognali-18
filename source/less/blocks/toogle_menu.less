@@ -11,31 +11,7 @@
   padding: 25px;
   box-sizing: border-box;
 }
-.toggle-close {
-  border: none;
-  background-color: inherit;
-  margin-bottom: 75px;
-}
-.toogle-nav-list {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: 'BloggerSans';
-  font-size: 30px;
-  color: #192144;
-  list-style: none;
-  text-align: center;
-  margin-bottom: 50px;
-  a {
-    text-decoration: none;
-    color: #192144;
-    text-transform: uppercase;
-  }
-}
-.toogle-autorization {
-  margin-bottom: 50px;
-}
-.toogle-contact-wrapper {
+.toogle-menu__contact-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -43,7 +19,7 @@
     text-decoration: none;
     text-transform: uppercase;
     color: #192144;
-    font-family: 'BloggerSans';
+    font-family: 'BloggerSans', Arial, sans-serif;;
     font-size: 16px;
     font-weight: bold;
     position: relative;
@@ -71,7 +47,7 @@
     height: 18px;
   }
 }
-.toogle-socials {
+.toogle-menu__socials {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -94,23 +70,7 @@
       margin-right: 170px;
     }
   }
-  .toogle-nav-list {
-    text-align: left;
-    padding-left: 60px;
-    font-size: 60px;
-  }
-  .toggle-close {
-    margin-top: 15px;
-  }
-  .toogle-autorization {
-    width: 190px;
-    height: 50px;
-    border-radius: 25px;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
-  .toogle-contact-wrapper {
+  .toogle-menu__contact-wrapper {
     margin-bottom: 130px;
     a {
       font-size: 28px;
@@ -130,12 +90,7 @@
       height: 27px;
     }
   }
-  .toogle-socials {
-    justify-content: flex-start;
-  }
-}
-@media (min-width: 1440px) {
-  .toogle-menu {
-    display: none;
+  .toogle-menu__socials {
+      justify-content: flex-start;
   }
 }

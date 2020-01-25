@@ -1,0 +1,34 @@
+.tags-list__item {
+  a {
+    text-decoration: none;
+    font-family: 'BloggerSans', Arial, sans-serif;;
+    font-size: 16px;
+    line-height: 18px;
+    color: #444444;
+  }
+}
+.tags-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 177px;
+  padding-bottom: 17px;
+  a {
+    text-decoration: none;
+  }
+}
+@media (min-width: 768px) {
+  .tags-list {
+    width: 230px;
+    margin-bottom: 5px;
+  }
+  .tags-list__item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    a {
+      font-size: 20px;
+    }
+  }
+}

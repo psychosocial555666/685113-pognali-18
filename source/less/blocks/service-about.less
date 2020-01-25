@@ -8,8 +8,8 @@
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 84px;
-  font-family: 'BloggerSans';
-  font-weight: 300;
+  font-family: 'BloggerSans', Arial, sans-serif;;
+  font-weight: 400;
   color: white;
   font-size: 16px;
   line-height: 22px;
@@ -19,12 +19,12 @@
   @media (min-resolution: 1.5dppx) {
       background-image: url(../img/about-mobile@2x.png);
     }
-  .service-about__more-details {
-    display: none;
-  }
-  .service-about__logo {
-    display: none;
-  }
+}
+.service-about__more-details {
+  display: none;
+}
+.service-about__logo {
+  display: none;
 }
 @media (min-width: 768px) {
   .service-about {
@@ -35,63 +35,81 @@
     padding-left: 40px;
     padding-right: 0;
     border-radius: 0 0 50px 50px;
-    .service-about__logo {
-      display: block;
-      width: 384px;
-      height: 578px;
-      background-image: url(../img/about-tablet@1x.png);
-      background-repeat: no-repeat;
-      background-position: 8px 25px;
-      background-size: 376px 548px;
-      @media (min-resolution: 1.5dppx) {
-          background-image: url(../img/about-tablet@2x.png);
-        }
-    }
-    .service-about__more-details {
-      display: block;
-      width: 270px;
-    }
-    .service-about__wrapper {
-      width: 325px;
-      padding-left: 35px;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-    }
-    .service-about__discription {
-      font-size: 28px;
-      line-height: 33px;
-    }
-    .service-about__call {
-      font-size: 21px;
-      line-height: 25px;
-      margin-bottom: 50px;
-    }
+    padding-top: 0px;
+  }
+  .service-about__title {
+    margin-bottom: 22px;
+  }
+  .service-about__logo {
+    display: block;
+    width: 384px;
+    height: 578px;
+    background-image: url(../img/about-tablet@1x.png);
+    background-repeat: no-repeat;
+    background-position: 8px 25px;
+    background-size: 376px 548px;
+    @media (min-resolution: 1.5dppx) {
+        background-image: url(../img/about-tablet@2x.png);
+      }
+  }
+  .service-about__more-details {
+    display: block;
+    width: 270px;
+  }
+  .service-about__wrapper {
+    width: 325px;
+    padding-left: 35px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .service-about__discription {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 32px;
+  }
+  .service-about__call {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 1440px) {
+  .service-about__title {
+    margin-bottom: 40px;
+  }
   .service-about {
     padding-left: 60px;
     padding-right: 60px;
+    padding-top: 92px;
     padding-bottom: 0;
-    .service-about__logo {
-      width: 630px;
-      height: 665px;
-      background-image: url(../img/about-desktop@1x.png);
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: 630px 665px;
-      @media (min-resolution: 1.5dppx) {
-          background-image: url(../img/about-desktop@2x.png);
-        }
+    .service-about__more-details {
+      width: 275px;
     }
-    .service-about__wrapper {
-      width: 697px;
-      padding-left: 70px;
-    }
-    .service-about__call {
-      margin-bottom: 80px;
-      width: 415px;
-    }
+  }
+  .service-about__discription {
+    margin-bottom: 40px;
+  }
+  .service-about__logo {
+    position: relative;
+    top: -17px;
+    right: auto;
+    width: 630px;
+    height: 665px;
+    background-image: url(../img/about-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 630px 665px;
+    @media (min-resolution: 1.5dppx) {
+        background-image: url(../img/about-desktop@2x.png);
+      }
+  }
+  .service-about__wrapper {
+    width: 697px;
+    padding-left: 70px;
+  }
+  .service-about__call {
+    margin-bottom: 85px;
+    width: 415px;
   }
 }

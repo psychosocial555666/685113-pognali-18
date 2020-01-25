@@ -1,0 +1,117 @@
+.direction__logo {
+  border-radius: 10px;
+}
+.direction__options {
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  margin-top: -20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 25px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.direction__country {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  color: #161c35;
+  width: 100%;
+  margin-bottom: 5px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 24px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: grey;
+    border-radius: 4px;
+    top: -40px;
+  }
+}
+.direction__country--thai {
+  &::before {
+    background-image: url(../img/flag-thailand.svg);
+  }
+}
+.direction__country--france {
+  &::before {
+    background-image: url(../img/flag-france.svg);
+  }
+}
+.direction__country--czech {
+  &::before {
+    background-image: url(../img/flag-czech.svg);
+  }
+}
+.direction__followers {
+  position: absolute;
+  top: 31px;
+  right: 25px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 2px;
+    left: -20px;
+    background-image: url(../img/user.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.3;
+  }
+}
+@media (min-width: 768px) {
+  .direction__options {
+    margin-top: 0;
+    margin-right: -20px;
+    padding-left: 30px;
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .direction__logo {
+    width: 206px;
+    height: 140px;
+    border-radius: 20px;
+  }
+  .direction__country {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 6px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 47px;
+      background-color: grey;
+      border-radius: 7px;
+      top: -16px;
+      right: -35px;
+    }
+  }
+  .direction__slogan {
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .direction__followers {
+    position: relative;
+    top: 18px;
+    left: 32px;
+    font-size: 20px;
+    line-height: 30px;
+    &::before {
+      width: 21px;
+      height: 20px;
+      left: -32px;
+    }
+  }
+}
+@media (min-width: 1440px) {
+
+}
