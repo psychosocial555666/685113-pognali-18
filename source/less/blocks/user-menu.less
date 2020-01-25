@@ -4,93 +4,143 @@
   padding: 0;
   display: flex;
   justify-content: flex-end;
-  width: 270px;
-  position: relative;
-  top: -20px;
   z-index: 2;
-  .user-menu__item--authorization {
-    width: 189px;
-    height: 40px;
-    button {
-      border-radius: 20px;
-      border: none;
-      background-color: #ffd74b;
-      position: relative;
-      font-family: 'BloggerSans';
-      font-weight: 800;
-      font-size: 17px;
-      line-height: 17px;
-      text-align: center;
-      color: #161c35;
-      text-transform: uppercase;
-      padding: 13px 40px 11px 37px;
-      cursor: pointer;
-      &:hover {
-        background-color: #ffbd30;
-      }
-      &:active {
-        color: rgba(#161c35, 0.3);
+  position: absolute;
+  top: 430px;
+  left: 25px;
+}
+.user-menu__item--authorization {
+  width: 189px;
+  height: 40px;
+  button {
+    border-radius: 20px;
+    border: none;
+    background-color: #ffd74b;
+    position: relative;
+    font-family: 'BloggerSans', Arial, sans-serif;;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+    color: #161c35;
+    text-transform: uppercase;
+    padding: 13px 40px 11px 37px;
+    cursor: pointer;
+    &:hover {
+      background-color: #ffbd30;
+    }
+    &:active {
+      color: rgba(#161c35, 0.3);
+    }
+  }
+}
+.user-menu__item--call-us {
+  width: 40px;
+  height: 40px;
+  button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: none;
+    background-color: #ff8d30;
+    position: relative;
+    cursor: pointer;
+    &:hover{
+      background-color: #f26926;
+    }
+    &:active {
+      svg {
+        opacity: 0.3;
       }
     }
+    svg {
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -9px;
+      margin-top: -9px;
+    }
+  }
+}
+.user-menu__item--write-us {
+  width: 40px;
+  height: 40px;
+  button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffbd30;
+    position: relative;
+    cursor: pointer;
+    &:hover{
+      background-color: #ff8d30;
+    }
+    &:active {
+      svg {
+        opacity: 0.3;
+      }
+    }
+    svg {
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -9px;
+      margin-top: -9px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .user-menu {
+    position: relative;
+    display: flex;
+    width: 190px;
+    top: 0;
   }
   .user-menu__item--call-us {
-    width: 40px;
-    height: 40px;
-    button {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      border: none;
-      background-color: #ff8d30;
-      position: relative;
-      cursor: pointer;
-      &:hover{
-        background-color: #f26926;
-      }
-      &:active {
-        svg {
-          opacity: 0.3;
-        }
-      }
-      svg {
-        width: 18px;
-        height: 18px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-left: -9px;
-        margin-top: -9px;
-      }
-    }
+    display: none;
   }
   .user-menu__item--write-us {
-    width: 40px;
-    height: 40px;
+    display: none;
+  }
+  .user-menu__item--authorization {
     button {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      border: none;
-      background-color: #ffbd30;
+      width: 186px;
+      height: 50px;
+      border-radius: 25px;
       position: relative;
-      cursor: pointer;
-      &:hover{
-        background-color: #ff8d30;
-      }
-      &:active {
-        svg {
-          opacity: 0.3;
-        }
-      }
-      svg {
-        width: 18px;
-        height: 18px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-left: -9px;
-        margin-top: -9px;
-      }
+      font-size: 20px;
+      line-height: 17px;
+      padding: 9px 40px 11px 27px;
+      top: -7px;
+      right: 23px;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .user-menu {
+    width: auto;
+    left: 0;
+  }
+  .user-menu__item--call-us {
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+  .user-menu__item--write-us {
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+  .user-menu__item--authorization {
+    button {
+      padding: 9px 40px 11px 27px;
+      top: auto;
+      right: auto;
     }
   }
 }

@@ -246,8 +246,8 @@
           <li class="toogle-nav-list__item"> <a href="form.html">Направления</a> </li>
           <li class="toogle-nav-list__item"> <a href="catalog.html">Попутчики</a> </li>
         </ul>
-        <div class="toogle-contact-wrapper">
-          <a href="tel:88005558628" class="toogle__tel">
+        <div class="toogle-menu__contact-wrapper contacts">
+          <a href="tel:88005558628" class="contacts__tel">
             <span>
               <svg width="18" height="18" viewBox="0 0 36 36">
                 <use xlink:href="#tel"></use>
@@ -255,7 +255,7 @@
             </span>
             8 800 555-86-28
           </a>
-          <a href="#" class="toogle__email">
+          <a href="#" class="contacts__email">
             <span>
               <svg width="18" height="13" viewBox="0 0 36 26">
                 <use xlink:href="#email"></use>
@@ -264,8 +264,8 @@
             mail@htmlacademy.ru
           </a>
         </div>
-        <div class="toogle-socials">
-          <ul class="social__list">
+        <div class="toogle-menu__socials social">
+          <ul class="social-list social__list">
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <svg width="11" height="21" viewBox="0 0 11 21">
@@ -299,9 +299,9 @@
         <h1 class="visually-hidden">Погнали?</h1>
         <p class="intro__slogan">В путешествие с крутыми попутчиками!</p>
         <div class="intro__logo"></div>
-        <div class="intro__quote">
+        <div class="intro__quote quote">
           <q class="quote__text">Лучшее приложение, что я видел в жизни!</q>
-          <cite class="quote__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+          <cite class="quote__author">Мурат Эльтазин <br> главный редактор газеты «гаджетлайф»</cite>
         </div>
         <ul class="features-list">
           <li class="features-list__item">Выберите <br>направление</li>
@@ -323,8 +323,8 @@
       <section class="directions">
         <h2 class="directions__title title">Направления</h2>
         <p class="directions__discription">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-        <ul class="direction-list">
-          <li class="direction-list__item">
+        <ul class="directions__list guide">
+          <li class="guide__item direction">
             <a href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/thailand-desktop@1x.webp 1x, img/thailand-desktop@2x.webp 2x">
@@ -341,7 +341,7 @@
               </div>
             </a>
           </li>
-          <li class="direction-list__item">
+          <li class="guide__item direction">
             <a href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/france-desktop@1x.webp 1x, img/france-desktop@2x.webp 2x">
@@ -358,7 +358,7 @@
               </div>
             </a>
           </li>
-          <li class="direction-list__item">
+          <li class="guide__item direction">
             <a href="#">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/czech-desktop@1x.webp 1x, img/czech-desktop@2x.webp 2x">
@@ -376,14 +376,14 @@
             </a>
           </li>
         </ul>
-        <button class="direction__show-countries button" type="button" name="button">Показать все</button>
+        <button class="directions__show-countries button" type="button" name="button">Показать все</button>
       </section>
       <section class="companions">
         <h2 class="companions__title title">Попутчики</h2>
         <p class="companions__intro">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга. </p>
         <p class="companions__intro companions__intro--strong">Теперь можно легко найти единомышленников!</p>
-        <ul class="companions-list">
-          <li class="companions-list__item">
+        <ul class="companions__list travelers">
+          <li class="travelers__item companion">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
@@ -397,18 +397,18 @@
               <span>level</span>
             </div>
             <div class="companion__discription">
-              <ul class="companion__country">
-                <li class="country__item">
+              <ul class="companion__country favorite-country">
+                <li class="favorite-country__item">
                   <svg width="35" height="24" viewBox="0 0 71 48">
                     <use xlink:href="#sri-lanka"></use>
                   </svg>
                 </li>
-                <li class="country__item">
+                <li class="favorite-country__item">
                   <svg width="35" height="24" viewBox="0 0 71 48">
                     <use xlink:href="#thailand"></use>
                   </svg>
                 </li>
-                <li class="country__item">
+                <li class="favorite-country__item">
                   <svg width="35" height="24" viewBox="0 0 71 48">
                     <use xlink:href="#seychells"></use>
                   </svg>
@@ -459,7 +459,7 @@
               </ul>
             </div>
           </li>
-          <li class="companions-list__item">
+          <li class="travelers__item companion">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
@@ -472,14 +472,14 @@
               <span>80</span>
               <span>level</span>
             </div>
-            <div class="companion__discription">
+            <div class="companion__discription favorite-country">
               <ul class="companion__country">
-                <li class="country__item">
+                <li class="favorite-country__item">
                   <svg width="35" height="24" viewBox="0 0 71 48">
                     <use xlink:href="#belgium"></use>
                   </svg>
                 </li>
-                <li class="country__item">
+                <li class="favorite-country__item">
                   <svg width="35" height="24" viewBox="0 0 71 48">
                     <use xlink:href="#czech"></use>
                   </svg>
@@ -570,7 +570,7 @@
       </section>
       <section class="user-login">
         <h2 class="user-login__title title">Заинтересовались?</h2>
-        <p class="user-login__discription"> Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="form.html" class="login-link">авторизуйтесь.</a> </p>
+        <p class="user-login__discription"> Зарегистрируйтесь, это быстро и бесплатно!<br> Уже зарегистрированы? Тогда скорее <a href="form.html" class="login-link">авторизуйтесь.</a> </p>
         <p class="user-login__intrance">
           <input type="text" value="E-mail">
           <button class="button" type="submit" name="button"></button>
@@ -624,7 +624,7 @@
           <img class="logo__mobile" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="20" alt="Погнали?">
         </picture>
       </a>
-        <ul class="social__list">
+        <ul class="page-footer__socials social-list social">
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
               <svg width="11" height="21" viewBox="0 0 11 21">
