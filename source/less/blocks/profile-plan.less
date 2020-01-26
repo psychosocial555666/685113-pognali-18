@@ -5,7 +5,6 @@
   margin-top: -20px;
   position: relative;
   z-index: 2;
-  font-family: 'BloggerSans', Arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #1d2e5b;
@@ -15,7 +14,7 @@
   font-weight: 700;
   padding: 0;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 .profile-plan__item {
   background-color: white;
@@ -23,12 +22,12 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  padding: 25px;
+  padding: 20px 23px 23px 23px;
   box-sizing: border-box;
 }
 .visit-wrapper {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-size: 16px;
 }
 .visit-list {
@@ -45,18 +44,22 @@
   padding: 0;
   margin: 0;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
 }
 .plan-date {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+  letter-spacing: 1.5px;
 }
 .change-plan {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
+  letter-spacing: 1.5px;
   &:hover {
     color: rgba(0, 0, 0, 0.6);
   }
@@ -68,10 +71,11 @@
   .profile-plan {
     border-radius: 30px 30px 0 0;
     margin-top: -30px;
-    padding: 50px 75px 100px 75px;
+    padding: 54px 75px 100px 75px;
   }
   .profile-plan__item {
-    padding: 35px;
+    padding: 31px;
+    padding-top: 35px;
     padding-bottom: 10px;
   }
   .plan-title {
@@ -81,7 +85,7 @@
   .visit-wrapper {
     font-size: 24px;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 49px;
     span {
       order: 2;
     }
@@ -93,29 +97,38 @@
   }
   .plan-date {
     margin-bottom: 0;
+    margin-right: 29px;
+    letter-spacing: 2px;
   }
 }
 @media (min-width: 1440px) {
   .profile-plan {
-    padding: 50px 60px 110px 125px;
+    padding: 50px 60px 115px 125px;
     border-radius: 60px 60px 0 0;
     margin-top: -60px;
+  }
+  .plan-title {
+    padding-left: 5px;
   }
   .profile-plan__item {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 40px 40px 0 40px;
+    height: 97px;
+    padding-top: 32px;
+    align-items: baseline;
+    padding-left: 41px;
+    padding-right: 40px;
   }
   .visit-wrapper {
     span {
       order: 0;
-      margin-right: 35px;
+      margin-right: 30px;
     }
   }
   .visit-list {
-    margin-right: 310px;
+    margin-right: 295px;
   }
   .quantity-companions {
     min-width: 138px;

@@ -1,25 +1,27 @@
 .plan-addition {
-  margin-top: -30px;
+  margin-top: -23px;
   position: relative;
   z-index: 2;
   border-radius: 30px 30px 0 0;
   background-color: #d4d9eb;
   padding: 25px;
-  font-family: 'BloggerSans', Arial, sans-serif;;
+  padding-top: 25px;
   color: #1d2e5b;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 .addition-title {
   font-size: 24px;
   color: #1d2e5b;
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
   box-sizing: border-box;
 }
 .step {
   background-color: white;
   padding: 25px;
+  padding-top: 20px;
+  padding-bottom: 21px;
   border-radius: 10px;
   box-sizing: border-box;
   margin-bottom: 10px;
@@ -33,6 +35,7 @@
   font-size: 20px;
   font-weight: 700;
   margin: 0;
+  line-height: 1.1;
 }
 .plan-nav {
   display: flex;
@@ -42,8 +45,8 @@
   margin: 0;
   height: 6px;
   position: absolute;
-  top: 35px;
-  right: 27px;
+  top: 38px;
+  right: 43px;
 }
 .plan-nav__item {
   text-transform: uppercase;
@@ -74,6 +77,7 @@
   font-size: 16px;
   font-weight: 400;
   color: #444444;
+  line-height: 1.4;
 }
 .parametr-choice {
   display: flex;
@@ -84,9 +88,11 @@
     margin-left: auto;
     margin-bottom: 9px;
     opacity: 0.3;
+    letter-spacing: 1px;
   }
   b {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
   }
 }
 .switch {
@@ -94,13 +100,18 @@
   border-radius: 4px;
   border: solid 1px #cbced9;
   background-color: #ffffff;
-  padding: 12px 14px;
+  padding: 11px 14px;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  margin-bottom: 20px;
-  p {
+  margin-bottom: 18px;
+  input {
     margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 20px;
+    width: 12px;
+    height: 21px
   }
 }
 .switch-button {
@@ -110,7 +121,7 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 14px;
-  height: 14px;
+  height: 19px;
   cursor: pointer;
   opacity: 0.3;
   box-sizing: border-box;
@@ -126,7 +137,7 @@
 }
 .children-possible {
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   label {
     cursor: pointer;
     position: relative;
@@ -134,6 +145,8 @@
     font-size: 16px;
     font-weight: 400;
     color: #444444;
+    margin-top: 5px;
+    display: block;
     &:hover {
       &::before {
         border: solid 1px #959bb2;
@@ -148,10 +161,10 @@
     &::before {
       content: "";
       position: absolute;
-      top: -7px;;
-      left: -38px;
-      width: 26px;
-      height: 26px;
+      top: -3px;
+      left: -39px;
+      width: 24px;
+      height: 24px;
       border-radius: 4px;
       border: solid 1px #cbced9;
       background-color: #ffffff;
@@ -177,7 +190,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 14px;
 }
 .month-name {
   font-size: 20px;
@@ -220,13 +233,14 @@
     font-weight: 400;
     color: #444444;
     height: 30px;
+    padding-left: 3px;
     b {
       display: none;
     }
   }
   td {
     width: 30px;
-    height: 30px;
+    height: 31px;
     box-sizing: border-box;
     box-shadow: 0 0 0 1px #d4d9eb inset;
     margin: 0;
@@ -265,7 +279,6 @@
   padding-top: 3px;
   height: 40px;
   width: 100%;
-  font-family: 'BloggerSans', Arial, sans-serif;;
   font-size: 17px;
   font-weight: 700;
   color: #161c35;
@@ -273,7 +286,6 @@
   border: none;
   border-radius: 20px;
   vertical-align: middle;
-  margin-bottom: 15px;
   cursor: pointer;
   &:hover {
     background-color: #ffbd30;
@@ -301,12 +313,12 @@
   height: 40px;
   display: flex;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   &::after {
     content: '';
     position: absolute;
-    top: 15px;
-    right: 46px;
+    top: 21px;
+    right: 48px;
     width: 8px;
     height: 8px;
     background-color: #1d2e5b;
@@ -326,17 +338,24 @@
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  margin-top: 5px;
   p {
     margin: 0;
     padding: 0;
-    width: 120%;
+    display: block;
+    max-width: 135px;
+    max-height: 20px;
     word-wrap: normal;
+    letter-spacing: 1.5px;
+  }
+  span {
+    display: none;
   }
   &::before {
     content: '';
     position: absolute;
     top: 6px;
-    right: 10px;
+    right: 13px;
     width: 12px;
     height: 7px;
     background-image: url(../img/dropdown-form.svg);
@@ -359,14 +378,24 @@
 .country-select-popup-closed {
   display: none;
 }
+.step-two {
+  padding: 25px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  .button-small {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+}
 .selector-flag {
-  width: 50px;
+  width: 67px;
   height: 100%;
   box-sizing: border-box;
   border: 1px solid #cbced9;
   border-left: none;
   border-radius: 4px;
   padding: 7px;
+  margin-top: 5px;
 }
 .flag {
   width: 35px;
@@ -380,7 +409,7 @@
 }
 .selector-close {
   position: absolute;
-  top: -10px;
+  top: -5px;
   right: -10px;
   width: 21px;
   height: 21px;
@@ -448,18 +477,19 @@
 .fun-country {
   font-size: 18px;
   padding-left: 12px;
+  margin-bottom: 16px;
 }
 .fun-discription {
   width: 220px;
-  height: 220px;
+  height: 194px;
   border-radius: 4px;
   border: solid 1px #cbced9;
-  font-family: 'BloggerSans', Arial, sans-serif;;
   font-size: 16px;
   font-weight: 400;
   color: rgba(68, 68, 68, 0.3);
   padding: 15px;
-  margin-bottom: 15px;
+  padding-top: 8px;
+  margin-bottom: 8px;
   width: 100%;
   resize: none;
   outline: none;
@@ -494,7 +524,7 @@
     top: 2px;
     left: -14px;
     width: 2px;
-    height: 324px;
+    height: 284px;
     background-color: #1d2e5b;
   }
 }
@@ -506,37 +536,55 @@
   }
 }
 .step-three {
+  padding-bottom: 0px;
   .plan-nav {
     display: none;
+  }
+  .step-instruction {
+    margin-bottom: 0px;
+  }
+  .button-small {
+    margin-top: 13px;
   }
 }
 @media (min-width: 768px) {
   .plan-addition {
     padding: 45px 75px;
+    margin-top: -28px;
+  }
+  .addition-title {
+    font-size: 36px;
+    margin-bottom: 56px;
   }
   .step {
-    padding: 35px 45px;
+    padding: 42px 43px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    padding-bottom: 26px;
   }
   .step-title {
     font-size: 36px;
   }
   .plan-nav {
     width: 73px;
-    top: 55px;
+    top: 65px;
     right: 75px;
   }
   .step-instruction {
     font-size: 20px;
-    padding-bottom: 45px;
+    padding-bottom: 42px;
+    padding-top: 10px;
     border-bottom: solid 1px #cbced9;
     position: relative;
+    line-height: 1.2;
   }
   .step-two {
     .step-instruction {
+      padding-right: 145px;
+      padding-bottom: 37px;
+      margin-bottom: 41px;
       &::before {
         content: '';
         width: 2px;
@@ -551,18 +599,22 @@
   }
   .parametr-choice {
     font-size: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 11px;
     b {
-      margin-bottom: 20px;
+      margin-bottom: 22px;
+      letter-spacing: 1.5px;
+    }
+    span {
+      letter-spacing: 2px;
     }
   }
   .switch {
-    padding-top: 24px;
-    padding-bottom: 22px;
+    padding-top: 22px;
+    padding-bottom: 23px;
   }
   .switch-button {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 22px;
     background-image: url(../img/qty-minus.svg);
   }
   .more {
@@ -573,35 +625,45 @@
   }
   .children-possible {
     padding-bottom: 35px;
-    margin-bottom: 25px;
+    margin-bottom: 19px;
     border-bottom: solid 1px #cbced9;
     label {
-      font-family: BloggerSans;
+      letter-spacing: 2px;
       font-size: 20px;
       font-weight: 500;
       color: #1d2e5b;
       text-transform: uppercase;
       margin-left: 59px;
+      margin-top: 0;
       &::before{
         width: 34px;
         height: 34px;
-        top: -9px;;
+        top: -4px;;
         left: -58px;
       }
     }
   }
+  .duration {
+    margin-bottom: 41px;
+  }
   .calendar {
     order: 2;
-    margin-bottom: 45px;
+    margin-bottom: 17px;
   }
   .month-name {
     font-size: 36px;
-    margin-top: 18px;
-    margin-bottom: 15px;
+    margin-top: 21px;
+    margin-bottom: 21px;
   }
   .month-btn {
-    width: 17px;
-    height: 28px;
+    width: 21px;
+    height: 34px;
+  }
+  .month-swith {
+    padding-left: 17px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    margin-bottom: 32px;
   }
   .button-wrapper {
     display: flex;
@@ -635,6 +697,7 @@
     text-transform: none;
     font-size: 24px;
     position: relative;
+    margin-bottom: 5px;
     &::before {
       content: "";
       position: absolute;
@@ -648,6 +711,8 @@
     }
   }
   .step-two {
+    padding-bottom: 48px;
+    margin-bottom: 50px;
     .next-step-button {
       margin-top: 40px;
     }
@@ -668,6 +733,7 @@
     font-size: 20px;
     height: 70px;
     box-sizing: border-box;
+    margin-bottom: 18px;
     &::after {
       width: 15px;
       height: 15px;
@@ -676,35 +742,56 @@
     }
   }
   .country-selected {
-    padding: 26px 30px 16px 27px;
+    padding: 22px 30px 16px 25px;
     border-color: #cbced9;
     width: 369px;
     font-size: 20px;
+    font-weight: 500;
+    margin-top: 0;
+    p {
+      max-width: none;
+      letter-spacing: 2px;
+    }
+    span {
+      display: inline;
+    }
     &::before {
-      background-position: 0 22px;
+      background-position: 0;
       width: 17px;
-      right: 30px;
+      right: 29px;
+      height: 17px;
+      top: 27px;
     }
   }
+  .selector-two {
+    margin-bottom: 14px;
+  }
+  .country-selector-select {
+    margin-bottom: 14px;
+  }
   .country-selector-add {
+    margin-bottom: 10px;
     .country-selected{
       &::before {
-        background-position: 0 22px;
-        width: 17px;
-        right: 30px;
+        background-position: 0;
+        width: 18px;
+        right: 29px;
+        height: 18px;
+        top: 27px;
       }
     }
   }
   .selector-flag {
     border: none;
     width: 158px;
-    padding-left: 50px;
-    padding-top: 10px;
+    padding-left: 53px;
+    padding-top: 8px;
   }
   .flag {
     width: 70px;
     height: 47px;
     border-radius: 10px;
+    margin-right: 31px;
   }
   .selector-close {
     width: 17px;
@@ -717,7 +804,9 @@
   }
   .fun-country {
     font-size: 30px;
+    font-weight: 700;
     padding-left: 0;
+    margin-bottom: 40px;
   }
   .fun-point {
     width: 15px;
@@ -725,43 +814,67 @@
     border-radius: 50%;
     background-color: #1d2e5b;
     position: absolute;
-    top: 40px;
-    left: 410px;
+    top: 45px;
+    left: 521px;
     &::before{
       display: none;
     }
     &::after {
-      display: none;
+      display: block;
+      width: 2px;
+      height: 263px;
+      top: 12px;
+      left: 6px;
     }
   }
   .fun-discription {
     font-size: 20px;
-    height: 140px;
+    height: 120px;
+    width: 470px;
+    margin-bottom: 10px;
+  }
+  .last-plan {
+    margin-bottom: 19px;
+  }
+  .step-three {
+    margin-bottom: 63px;
+    .step-instruction {
+      padding-top: 12px;
+      padding-bottom: 36px;
+    }
   }
 }
 @media (min-width: 1440px) {
   .plan-addition {
-    padding: 45px 60px;
-    padding-bottom: 100px;
+    padding: 50px 60px;
+    padding-bottom: 76px;
     border-radius: 60px 60px 0 0;
     margin-top: -60px;
   }
   .addition-title {
     margin-left: 70px;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
     font-size: 36px;
   }
   .step {
-    padding: 90px 160px;
+    padding: 96px 160px 77px 160px;
     border-radius: 60px;
     flex-wrap: wrap;
     flex-direction: row;
     margin-bottom: 45px;
   }
   .step-two {
+    padding-bottom: 102px;
+    .step-instruction {
+      max-width: 400px;
+      margin-bottom: 50px;
+    }
     .plan-nav {
       display: flex;
     }
+  }
+  .country-selected {
+    padding-bottom: 47px;
   }
   .step-title {
     margin-bottom: 10px;
@@ -777,14 +890,17 @@
     min-width: 170px;
     height: auto;
     margin-left: auto;
+    margin-left: 239px;
+    margin-top: 11px;
   }
   .plan-nav__item {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     width: auto;
     height: auto;
+    letter-spacing: 2px;
     &::before {
-      top: 6px;
-      left: -36px;
+      top: 8px;
+      left: -43px;
     }
     p {
       display: block;
@@ -799,14 +915,15 @@
     top: -30px;
     padding: 0;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 59px;
+    margin-top: -43px;
     border: none;
     &::after {
       content: '';
       width: 1000px;
       height: 2px;
       position: absolute;
-      bottom: -36px;
+      bottom: -22px;
       left: 0;
       background-color: #cbced9;
     }
@@ -817,8 +934,8 @@
     min-width: 576px;
     justify-content: space-between;
     b {
-      width: 190px;
-      margin-right: 30px;
+      width: 195px;
+      margin-right: 27px;
       margin-bottom: 0;
     }
     span {
@@ -841,10 +958,20 @@
     border: none;
     position: relative;
     top: -80px;
+    label {
+      margin-top: 20px;
+    }
+  }
+  .duration {
+    margin-bottom: 32px;
   }
   .month-swith {
     margin-bottom: 0;
-    height: 85px;
+    height: 88px;
+    padding: 0;
+  }
+  .calendar {
+    margin-bottom: 32px;
   }
   .calendar-table {
     th {
@@ -859,9 +986,10 @@
     td {
       text-align: left;
       vertical-align: top;
-      height: 72px;
+      height: 71px;
       padding-left: 13px;
       padding-top: 13px;
+      padding-bottom: 34px;
       position: relative;
       box-sizing: border-box;
     }
@@ -887,6 +1015,9 @@
   .country-selected {
     width: 730px;
   }
+  .country-selector-add {
+    margin-bottom: 14px;
+  }
   .selector-flag {
     padding-left: 85px;
   }
@@ -898,40 +1029,56 @@
   .step-two {
     .step-instruction {
       &::before {
-        bottom: -481px;
+        bottom: -466px;
         right: -198px;
         height: 445px;
       }
     }
   }
   .fun-discription {
-    width: 730px;
+    width: 696px;
+    height: 103px;
+    padding-top: 19px;
+    padding-left: 19px;
+    margin-bottom: 17px;
   }
   .fun-country {
     display: block;
     min-width: 300px;
   }
-  .step-three {
-    .flag {
-      margin-right: 100px;
-    }
-  }
   .button-wrapper {
     width: 100%;
   }
   .fun-point {
-    left: 790px;
+    left: 768px;
     &::after {
       display: block;
       top: 10px;
       left: 6px;
       width: 3px;
-      height: 270px;
+      height: 265px;
+    }
+  }
+  .last-plan {
+    margin-bottom: 28px;
+    .fun-country {
+      margin-bottom: 38px;
     }
   }
   .step-three {
+    .step-title {
+      margin-bottom: 20px;
+    }
+    .step-instruction {
+      margin-top: -53px;
+      width: 485px;
+      margin-bottom: 35px;
+    }
     .plan-nav {
       display: block;
+    }
+    .flag {
+      margin-right: 115px;
     }
   }
 }

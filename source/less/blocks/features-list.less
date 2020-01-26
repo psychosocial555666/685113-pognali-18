@@ -1,7 +1,7 @@
 .features-list {
   list-style: none;
-  font-family: 'BloggerSans', Arial, sans-serif;;
   font-size: 18px;
+  font-weight: 700;
   line-height: 18px;
   color: #161c35;
   padding: 0;
@@ -15,19 +15,21 @@
   width: 270px;
   border-radius: 10px;
   box-sizing: border-box;
-  padding-top: 25px;
-  padding-left: 25px;
+  padding-top: 22px;
+  padding-left: 24px;
   padding-right: 90px;
   padding-bottom: 25px;
+  &::before {
+    position: absolute;
+    top: 22px;
+    right: 21px;
+    color: white;
+  }
   &:first-child {
     height: 280px;
     position: relative;
     &::before {
       content: "1";
-      position: absolute;
-      top: 25px;
-      right: 25px;
-      color: white;
     }
   }
   &:nth-child(2) {
@@ -38,10 +40,6 @@
     background-color: #ffa530;
     &::before {
       content: "2";
-      position: absolute;
-      top: 25px;
-      right: 25px;
-      color: white;
     }
   }
   &:nth-child(3) {
@@ -52,10 +50,6 @@
     background-color: #ffbd30;
     &::before {
       content: "3";
-      position: absolute;
-      top: 25px;
-      right: 25px;
-      color: white;
     }
   }
   &:nth-child(4) {
@@ -66,10 +60,6 @@
     background-color: #ffd74b;
     &::before {
       content: "4";
-      position: absolute;
-      top: 25px;
-      right: 25px;
-      color: white;
     }
   }
 }
@@ -81,8 +71,8 @@
   }
   .features-list__item {
     box-sizing: border-box;
-    padding-top: 31px;
-    padding-left: 31px;
+    padding-top: 29px;
+    padding-left: 32px;
     padding-right: 90px;
     padding-bottom: 25px;
     font-size: 24px;
@@ -158,12 +148,13 @@
   .features-list {
     position: absolute;
     top: 372px;
+    left: 60px;
     width: 1320px;
   }
   .features-list__item {
     box-sizing: border-box;
-    padding-top: 31px;
-    padding-left: 31px;
+    padding-top: 26px;
+    padding-left: 32px;
     padding-right: 90px;
     padding-bottom: 25px;
     font-size: 24px;
@@ -175,8 +166,8 @@
       &::before {
         content: "1";
         position: absolute;
-        top: 31px;
-        right: 1030px;
+        top: 26px;
+        right: 1038px;
         color: white;
         font-size: 24px;
       }
@@ -192,8 +183,8 @@
       &::before {
         content: "2";
         position: absolute;
-        top: 31px;
-        right: 70px;
+        top: 27px;
+        right: 71px;
         color: white;
         font-size: 24px;
       }
@@ -210,8 +201,8 @@
       &::before {
         content: "3";
         position: absolute;
-        top: 31px;
-        right: 70px;
+        top: 27px;
+        right: 71px;
         color: white;
         font-size: 24px;
       }
@@ -228,8 +219,8 @@
       &::before {
         content: "4";
         position: absolute;
-        top: 31px;
-        right: 30px;
+        top: 27px;
+        right: 32px;
         color: white;
         font-size: 24px;
       }

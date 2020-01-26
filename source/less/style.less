@@ -1,4 +1,6 @@
-@import "fontface.less";
+@import "global/fontface.less";
+@import "global/variables.less";
+@import "global/global-style.less";
 @import "blocks/button.less";
 @import "blocks/page-header.less";
 @import "blocks/logo.less";
@@ -40,18 +42,3 @@
 @import "blocks/price-list.less";
 @import "blocks/questions.less";
 @import "blocks/copyright.less";
-body {
-  width: 320px; //Временная заплатка, потом уберу
-  margin: 0 auto;
-  padding: 0;
-}
-@media (min-width: 768px) {
-  body {
-    width: 768px;
-  }
-}
-@media (min-width: 1440px) {
-  body {
-    width: 1440px;
-  }
-}

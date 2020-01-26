@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Погнали</title>
     <link href="./css/style.min.css" rel="stylesheet">
+    <script src="js/picturefill.js"></script>
   </head>
   <body>
     <svg style="display: none;">
@@ -321,8 +322,11 @@
         </div>
       </section>
       <section class="directions">
-        <h2 class="directions__title title">Направления</h2>
-        <p class="directions__discription">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+        <div class="directions-wrapper">
+          <h2 class="directions__title title">Направления</h2>
+          <p class="directions__discription">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          <button class="directions__show-countries button" type="button" name="button">Показать все</button>
+        </div>
         <ul class="directions__list guide">
           <li class="guide__item direction">
             <a href="#">
@@ -376,12 +380,14 @@
             </a>
           </li>
         </ul>
-        <button class="directions__show-countries button" type="button" name="button">Показать все</button>
       </section>
       <section class="companions">
-        <h2 class="companions__title title">Попутчики</h2>
-        <p class="companions__intro">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга. </p>
-        <p class="companions__intro companions__intro--strong">Теперь можно легко найти единомышленников!</p>
+        <div class="companions-wrapper">
+          <h2 class="companions__title title">Попутчики</h2>
+          <p class="companions__intro">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга. </p>
+          <p class="companions__intro companions__intro--strong">Теперь можно легко найти единомышленников!</p>
+          <a href="#" class="companions__show-all button">Показать всех</a>
+        </div>
         <ul class="companions__list travelers">
           <li class="travelers__item companion">
             <picture>
@@ -530,7 +536,6 @@
             </div>
           </li>
         </ul>
-        <a href="catalog.html" class="companions__show-all button">Показать всех</a>
         <div class="profile-popup profile-popup-closed">
           <h2 class="profile-popup__title title">Бизнес-тарифы</h2>
           <table class="rates-table">
@@ -571,10 +576,10 @@
       <section class="user-login">
         <h2 class="user-login__title title">Заинтересовались?</h2>
         <p class="user-login__discription"> Зарегистрируйтесь, это быстро и бесплатно!<br> Уже зарегистрированы? Тогда скорее <a href="form.html" class="login-link">авторизуйтесь.</a> </p>
-        <p class="user-login__intrance">
+        <form class="user-login__intrance">
           <input type="text" value="E-mail">
           <button class="button" type="submit" name="button"></button>
-        </p>
+        </form>
         <div class="questions">
           <p class="questions__discription">Остались вопросы? Мы с радостью на них ответим!</p>
           <div class="questions__wrapper">

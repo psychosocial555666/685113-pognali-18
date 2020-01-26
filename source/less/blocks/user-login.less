@@ -1,22 +1,22 @@
 .user-login {
   background-color: #192144;
   margin: 0;
-  padding-top: 100px;
+  padding-top: 120px;
   position: relative;
   margin-top: -50px;
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 30px;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 30px 30px;
   box-sizing: border-box;
   z-index: 2;
 }
 .user-login__title {
   text-align: center;
+  margin-bottom: 20px;
 }
 .user-login__discription {
   text-align: center;
-  font-family: 'BloggerSans', Arial, sans-serif;;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -44,7 +44,6 @@
     padding-bottom: 20px;
     box-sizing: border-box;
     border: none;
-    font-family: 'BloggerSans', Arial, sans-serif;;
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
@@ -74,11 +73,12 @@
   .user-login {
     padding-left: 75px;
     padding-right: 75px;
-    border-radius: 0 0 50px 50px;
-    padding-bottom: 55px;
+    border-radius: 0 0 60px 60px;
+    padding-bottom: 60px;
+    padding-top: 135px;
   }
   .user-login__title {
-    margin-bottom: 63px;
+    margin-bottom: 67px;
   }
   .user-login__discription {
     font-size: 28px;
@@ -107,7 +107,7 @@
 }
 @media (min-width: 1440px) {
   .user-login {
-    padding: 128px 132px 115px 132px;
+    padding: 165px 132px 115px 132px;
   }
   .user-login__title {
     margin-bottom: 70px;
@@ -115,18 +115,22 @@
   .user-login__discription {
     padding-left: 284px;
     padding-right: 284px;
-    margin-bottom: 58px;
+    margin-bottom: 60px;
     text-align: center;
+    br {
+      display: none;
+    }
   }
   .user-login__intrance {
     margin-bottom: 67px;
     button {
       width: 325px;
+      padding-left: 35px;
+      padding-top: 27px;
       &::after {
         content: "Регистрация";
         position: relative;
         top: 3px;
-        font-family: 'BloggerSans', Arial, sans-serif;;
         font-size: 24px;
         font-weight: 700;
         line-height: 24px;

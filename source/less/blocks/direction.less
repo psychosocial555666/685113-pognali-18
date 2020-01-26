@@ -5,12 +5,12 @@
   background-color: white;
   border-radius: 10px;
   position: relative;
-  margin-top: -20px;
+  margin-top: -15px;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 25px;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-top: 25px;
+  padding-bottom: 23px;
 }
 .direction__country {
   font-weight: 700;
@@ -18,7 +18,7 @@
   line-height: 21px;
   color: #161c35;
   width: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   position: relative;
   &::before {
     content: "";
@@ -30,7 +30,8 @@
     background-size: cover;
     background-color: grey;
     border-radius: 4px;
-    top: -40px;
+    top: -37px;
+    left: 0px;
   }
 }
 .direction__country--thai {
@@ -50,7 +51,7 @@
 }
 .direction__followers {
   position: absolute;
-  top: 31px;
+  top: 29px;
   right: 25px;
   &::before {
     content: "";
@@ -69,7 +70,8 @@
   .direction__options {
     margin-top: 0;
     margin-right: -20px;
-    padding-left: 30px;
+    padding-left: 32px;
+    padding-top: 30px;
     width: 100%;
     border-radius: 20px 0 0 20px;
     flex-direction: column;
@@ -81,6 +83,7 @@
     border-radius: 20px;
   }
   .direction__country {
+    position: relative;
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 6px;
@@ -91,8 +94,9 @@
       height: 47px;
       background-color: grey;
       border-radius: 7px;
-      top: -16px;
-      right: -35px;
+      top: -14px;
+      left: 367px;
+      right: auto;
     }
   }
   .direction__slogan {
@@ -101,8 +105,8 @@
   }
   .direction__followers {
     position: relative;
-    top: 18px;
-    left: 32px;
+    top: 15px;
+    left: 30px;
     font-size: 20px;
     line-height: 30px;
     &::before {
@@ -113,5 +117,17 @@
   }
 }
 @media (min-width: 1440px) {
-
+  .direction__options {
+    padding-left: 31px;
+    padding-top: 19px;
+  }
+  .direction__followers {
+    top: 23px;
+  }
+  .direction__country {
+    &::before {
+      top: 2px;
+      left: 307px;
+    }
+  }
 }

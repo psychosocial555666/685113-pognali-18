@@ -14,11 +14,18 @@
   .toogle-opened {
     display: block;
     fill: white;
+    background-color: #161c36;
   }
   .toogle-closed {
     display: none;
+    background-color: white;
   }
   .toogle-menu {
+    display: none;
+  }
+}
+.page-header--inner, .page-header--form {
+  .user-menu {
     display: none;
   }
 }
@@ -63,10 +70,17 @@
     }
   }
   .page-header-top {
-    padding: 0 40px;
+    padding: 0;
+    padding-left: 40px;
+    padding-right: 42px;
     padding-bottom: 40px;
     margin-bottom: 27px;
     align-items: center;
+  }
+  .page-header--inner, .page-header--form {
+    .user-menu {
+      display: flex;
+    }
   }
   .page-header--inner {
     background-color: #161c35;
