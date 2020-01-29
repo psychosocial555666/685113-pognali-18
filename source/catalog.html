@@ -7,7 +7,6 @@
     <link href="./css/style.min.css" rel="stylesheet">
     <script src="js/picturefill.js"></script>
   </head>
-
   <body>
     <svg style="display: none;">
       <symbol id="toogle-close">
@@ -181,7 +180,7 @@
       </symbol>
     </svg>
     <header class="page-header page-header--inner menu-opened">
-      <div class="page-header-top">
+      <div class="page-header__top">
         <a href="index.html" class="logo page-header__logo">
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
@@ -195,17 +194,17 @@
             <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
             <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-            <img class="logo__mobile-opened" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="20" alt="Погнали?">
+            <img class="logo__mobile--opened" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="20" alt="Погнали?">
           </picture>
         </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle toogle-opened" type="button">
+          <button class="main-nav__toggle main-nav__toggle--opened" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <svg width="25" height="11" viewBox="0 0 25 11">
               <use xlink:href="#toogle-open"></use>
             </svg>
           </button>
-          <button class="main-nav__toggle toogle-closed" type="button">
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button">
             <span class="visually-hidden">Закрыть меню</span>
             <svg width="19" height="19" viewBox="0 0 19 19">
               <use xlink:href="#toogle-close"></use>
@@ -244,9 +243,9 @@
       <section class="toogle-menu">
         <h3 class="visually-hidden">Выпадающее меню</h3>
         <ul class="toogle-nav-list">
-          <li class="toogle-nav-list__item"> <a href="#">О сервисе</a> </li>
+          <li class="toogle-nav-list__item"> <a href="index.html">О сервисе</a> </li>
           <li class="toogle-nav-list__item"> <a href="form.html">Направления</a> </li>
-          <li class="toogle-nav-list__item"> <a href="catalog.html">Попутчики</a> </li>
+          <li class="toogle-nav-list__item"> <a href="#">Попутчики</a> </li>
         </ul>
         <div class="toogle-menu__contact-wrapper contacts">
           <a href="tel:88005558628" class="contacts__tel">
@@ -296,47 +295,47 @@
         </div>
       </section>
     </header>
-    <main class="page-main page-main--inner">
+    <main class="page-main page-main-inner">
       <div class="title-wrapper">
-        <h1 class="title section-title">Попутчики</h1>
-        <a class="return-to-main" href="index.html">На главную</a>
+        <h1 class="title-wrapper__title title section-title">Попутчики</h1>
+        <a class="title-wrapper__return return-to-main" href="index.html">На главную</a>
       </div>
       <section class="country-filter">
         <h3 class="visually-hidden">Фильтрация по странам</h3>
-        <div class="filter-wrapper">
-          <p class="country-filter-title">Фильтрация по странам</p>
-          <ul class="quick-country-list quick-list">
+        <div class="country-filter__wrapper">
+          <p class="country-filter__title">Фильтрация по странам</p>
+          <ul class="country-filter__quick quick-list">
             <li class="quick-list__item quick-list__item--active"> <a href="#">Европа</a> </li>
             <li class="quick-list__item"> <a href="#">Азия</a></li>
             <li class="quick-list__item"> <a href="#">Америка</a></li>
             <li class="quick-list__item"> <a href="#">Острова</a></li>
           </ul>
-          <button class="open-countries country-button" type="button" name="button"> <span>Показать все</span> </button>
-          <button class="close-countries country-button" type="button" name="button"> <span>Свернуть</span> </button>
+          <button class="country-filter__button country-filter__button--open " type="button" name="button"> <span>Показать все</span> </button>
+          <button class="country-filter__button country-filter__button--close " type="button" name="button"> <span>Свернуть</span> </button>
         </div>
         <section class="country-nav">
           <h3 class="visually-hidden">Выбор страны</h3>
           <div class="country-nav__item country-nav__item--active">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">А</button>
+            <div class="country-nav__head">
+              <button class="country-nav__letter country-nav__letter--active" type="button" name="button">А</button>
             </div>
-              <ul class="country-list">
-                <li class="country-list__item"> <a href="#">Австралия</a> </li>
-                <li class="country-list__item"> <a href="#">Австрия</a> </li>
-                <li class="country-list__item"> <a href="#">Азербайджан</a> </li>
+              <ul class="country-container__list country-list--active country-list">
+                <li class="country-list__item"> <a href="#">Афганистан</a> </li>
                 <li class="country-list__item"> <a href="#">Албания</a> </li>
                 <li class="country-list__item"> <a href="#">Алжир</a> </li>
                 <li class="country-list__item"> <a href="#">Ангола</a> </li>
                 <li class="country-list__item"> <a href="#">Андорра</a> </li>
                 <li class="country-list__item"> <a href="#">Антигуа и Барбуда</a> </li>
                 <li class="country-list__item"> <a href="#">Аргентина</a> </li>
+                <li class="country-list__item"> <a href="#">Армения</a> </li>
+                <li class="country-list__item"> <a href="#">Азербайджан</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">Б</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">Б</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Багамские Острова</a> </li>
                 <li class="country-list__item"> <a href="#">Бангладеш</a> </li>
                 <li class="country-list__item"> <a href="#">Барбадос</a> </li>
@@ -356,11 +355,11 @@
                 <li class="country-list__item"> <a href="#">Бутан</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">В</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">В</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Вануату</a> </li>
                 <li class="country-list__item"> <a href="#">Великобритания</a> </li>
                 <li class="country-list__item"> <a href="#">Венгрия</a> </li>
@@ -369,11 +368,11 @@
                 <li class="country-list__item"> <a href="#">Вьетнам</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">Г</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">Г</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Габон</a> </li>
                 <li class="country-list__item"> <a href="#">Гаити</a> </li>
                 <li class="country-list__item"> <a href="#">Гайана</a> </li>
@@ -389,39 +388,39 @@
                 <li class="country-list__item"> <a href="#">Грузия</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">Д</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">Д</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Дания</a> </li>
                 <li class="country-list__item"> <a href="#">Джибути</a> </li>
                 <li class="country-list__item"> <a href="#">Доминика</a> </li>
                 <li class="country-list__item"> <a href="#">Доминикана</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">Е</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">Е</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Египет</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">З</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">З</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Замбия</a> </li>
                 <li class="country-list__item"> <a href="#">Зимбабве</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">И</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">И</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Израиль</a> </li>
                 <li class="country-list__item"> <a href="#">Индия</a> </li>
                 <li class="country-list__item"> <a href="#">Индонезия</a> </li>
@@ -434,11 +433,11 @@
                 <li class="country-list__item"> <a href="#">Италия</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">К</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">К</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Кабо-Верде</a> </li>
                 <li class="country-list__item"> <a href="#">Казахстан</a> </li>
                 <li class="country-list__item"> <a href="#">Камбоджа</a> </li>
@@ -453,11 +452,11 @@
                 <li class="country-list__item"> <a href="#">Колумбия</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">Л</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">Л</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Лаос</a> </li>
                 <li class="country-list__item"> <a href="#">Латвия</a> </li>
                 <li class="country-list__item"> <a href="#">Лесото</a> </li>
@@ -472,11 +471,11 @@
                 <li class="country-list__item"> <a href="#">Колумбия</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">М</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">М</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Маврикий</a> </li>
                 <li class="country-list__item"> <a href="#">Мавритания</a> </li>
                 <li class="country-list__item"> <a href="#">Мадагаскар</a> </li>
@@ -489,11 +488,11 @@
                 <li class="country-list__item"> <a href="#">Мексика</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">Н</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">Н</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Намибия</a> </li>
                 <li class="country-list__item"> <a href="#">Науру</a> </li>
                 <li class="country-list__item"> <a href="#">Непал</a> </li>
@@ -506,20 +505,20 @@
                 <li class="country-list__item"> <a href="#">Мексика</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">О</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">О</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">ОАЭ</a> </li>
                 <li class="country-list__item"> <a href="#">Оман</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">П</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">П</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Пакистан</a> </li>
                 <li class="country-list__item"> <a href="#">Палау</a> </li>
                 <li class="country-list__item"> <a href="#">Панама</a> </li>
@@ -530,21 +529,21 @@
                 <li class="country-list__item"> <a href="#">Португалия</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">Р</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">Р</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Руанда</a> </li>
                 <li class="country-list__item"> <a href="#">Румыния</a> </li>
                 <li class="country-list__item"> <a href="#">Россия</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">С</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">С</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Сальвадор</a> </li>
                 <li class="country-list__item"> <a href="#">Самоа</a> </li>
                 <li class="country-list__item"> <a href="#">Сан-Марино</a> </li>
@@ -559,11 +558,11 @@
                 <li class="country-list__item"> <a href="#">США</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">Т</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">Т</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Таджикистан</a> </li>
                 <li class="country-list__item"> <a href="#">Таиланд</a> </li>
                 <li class="country-list__item"> <a href="#">Танзания</a> </li>
@@ -576,63 +575,63 @@
                 <li class="country-list__item"> <a href="#">Турция</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">У</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">У</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Уганда</a> </li>
                 <li class="country-list__item"> <a href="#">Узбекистан</a> </li>
                 <li class="country-list__item"> <a href="#">Украина</a> </li>
                 <li class="country-list__item"> <a href="#">Уругвай</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">Ф</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">Ф</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Фиджи</a> </li>
                 <li class="country-list__item"> <a href="#">Филиппины</a> </li>
                 <li class="country-list__item"> <a href="#">Финляндия</a> </li>
                 <li class="country-list__item"> <a href="#">Франция</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">Х</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">Х</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Хорватия</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">Ч</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">Ч</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Чад</a> </li>
                 <li class="country-list__item"> <a href="#">Черногория</a> </li>
                 <li class="country-list__item"> <a href="#">Чехия</a> </li>
                 <li class="country-list__item"> <a href="#">Чили</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">Ш</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">Ш</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Швейцария</a> </li>
                 <li class="country-list__item"> <a href="#">Швеция</a> </li>
                 <li class="country-list__item"> <a href="#">Шри-Ланка</a> </li>
                 <li class="country-list__item"> <a href="#">Франция</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">Э</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">Э</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Эквадор</a> </li>
                 <li class="country-list__item"> <a href="#">Эритрея</a> </li>
                 <li class="country-list__item"> <a href="#">Эсватини</a> </li>
@@ -640,34 +639,34 @@
                 <li class="country-list__item"> <a href="#">Эфиопия</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">Ю</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">Ю</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">ЮАР</a> </li>
                 <li class="country-list__item"> <a href="#">Южный Судан</a> </li>
               </ul>
           </div>
-          <div class="country-nav__item">
-            <div class="letter-header">
-              <button class="letter-button" type="button" name="button">Я</button>
+          <div class="country-nav__item country-container">
+            <div class="country-nav__head letter-header">
+              <button class="country-nav__letter" type="button" name="button">Я</button>
             </div>
-              <ul class="country-list">
+              <ul class="country-container__list country-list">
                 <li class="country-list__item"> <a href="#">Ямайка</a> </li>
                 <li class="country-list__item"> <a href="#">Япония</a> </li>
               </ul>
           </div>
         </section>
-        <button class="close-countries-bottom" type="button" name="button"> <span>Свернуть</span> </button>
+        <button class="country-filter__button country-filter__button--close-bottom" type="button" name="button"> <span>Свернуть</span> </button>
       </section>
       <div class="widescreen-wrapper">
       <section class="companion-filter">
-        <form class="filter-form" action="index.html" method="post">
-          <h3 class="form-title">Подберите идеального попутчика</h3>
-          <div class="fun filter-form__item">
-            <p>Хобби</p>
-            <ul class="parametr-list">
+        <form class="companion-filter__form filter-form" action="index.html" method="post">
+          <h3 class="filter-form__title">Подберите идеального попутчика</h3>
+          <div class="filter-form__item filter-form__item--fun form-item">
+            <p class="form-item__head">Хобби</p>
+            <ul class="form-item__list">
               <li><input class="visually-hidden" type="checkbox" id="sports" value="" checked="">
                 <label for="sports">Спортзал</label></li>
               <li><input class="visually-hidden" type="checkbox" id="smoke" value="">
@@ -676,9 +675,9 @@
                 <label for="sofa">Диван</label></li>
             </ul>
           </div>
-          <div class="music filter-form__item">
-            <p>Музыка</p>
-            <ul class="parametr-list">
+          <div class="filter-form__item filter-form__item--music form-item">
+            <p class="form-item__head">Музыка</p>
+            <ul class="form-item__list">
               <li><input class="visually-hidden" type="checkbox" id="rock" value="" checked="">
                 <label for="rock">Тяжелый рок</label></li>
               <li><input class="visually-hidden" type="checkbox" id="rap" value="">
@@ -687,9 +686,9 @@
                 <label for="dance">Евроденс</label></li>
             </ul>
           </div>
-          <div class="food filter-form__item">
-            <p>Еда</p>
-            <ul class="parametr-list">
+          <div class="filter-form__item filter-form__item--food form-item">
+            <p class="form-item__head">Еда</p>
+            <ul class="form-item__list">
               <li><input class="visually-hidden" type="checkbox" id="meat" value="" checked="">
                 <label for="meat">Мясоед</label></li>
               <li><input class="visually-hidden" type="checkbox" id="proper-nutrition" value="">
@@ -698,78 +697,78 @@
                 <label for="vegan">Веган-сыроед</label></li>
             </ul>
           </div>
-          <div class="transport filter-form__item">
-            <p>Транспорт</p>
-            <ul class="transport-list transport-list-form">
-              <li class="transport-list__item transport-list__item--plane transport-list__item--active">
-                <a href="#">
+          <div class="filter-form__item filter-form__item--transport form-item">
+            <p class="form-item__head">Транспорт</p>
+            <ul class="transport-list form-item__transport form-transports">
+              <li class="form-transports__item transport-list__item transport-list__item--plane">
+                <input class="visually-hidden" type="checkbox" id="plane-box" name="plane">
+                <label for="plane-box">
                   <svg viewBox="0 0 19 21">
                     <use xlink:href="#plane"></use>
                   </svg>
-                  <span class="visually-hidden"> Автотранспорт </span>
-                </a>
-            </li>
-              <li class="transport-list__item transport-list__item--bus">
-                <a href="#">
+                </label>
+              </li>
+              <li class="form-transports__item transport-list__item transport-list__item--bus">
+                <input class="visually-hidden" type="checkbox" id="bus-box">
+                <label for="bus-box">
                   <svg viewBox="0 0 17 21">
                     <use xlink:href="#bus"></use>
                   </svg>
-                  <span class="visually-hidden"> Авиаперелет </span>
-                </a>
+                </label>
               </li>
-              <li class="transport-list__item transport-list__item--bike">
-                <a href="#">
+              <li class="form-transports__item transport-list__item transport-list__item--bike">
+                <input class="visually-hidden" type="checkbox" id="bike-box">
+                <label for="bike-box">
                   <svg viewBox="0 0 24 21">
                     <use xlink:href="#bike"></use>
                   </svg>
-                  <span class="visually-hidden"> Велосипед </span>
-                </a>
+                </label>
               </li>
-              <li class="transport-list__item transport-list__item--run">
-                <a href="#">
+              <li class="form-transports__item transport-list__item transport-list__item--run">
+                <input class="visually-hidden" type="checkbox" id="walk-box">
+                <label for="walk-box">
                   <svg viewBox="0 0 20 21">
                     <use xlink:href="#walk"></use>
                   </svg>
-                  <span class="visually-hidden"> Пешком </span>
-                </a>
+                </label>
               </li>
             </ul>
           </div>
-          <div class="level filter-form__item">
-            <p>Левел</p>
-            <div class="level-box">
-              <p class="level-min">30</p>
-              <p class="level-max">100</p>
+          <div class="filter-form__item form-item level">
+            <p class="form-item__head">Левел</p>
+            <div class="level__box">
+              <p class="level__min">30</p>
+              <p class="level__max">100</p>
             </div>
-            <div class="level-value">
-              <div class="point-min">
+            <div class="level__value">
+              <div class="level__point--min">
               </div>
-              <div class="point-max">
+              <div class="level__point--max">
               </div>
-              <div class="level-scale">
+              <div class="level__scale">
               </div>
             </div>
           </div>
-          <button class="show-form" type="button" name="button">Показать</button>
+          <button class="filter-form__show" type="button" name="button">Показать</button>
         </form>
       </section>
       <section class="companion-choise">
         <h3 class="visually-hidden">Выбор попутчика</h3>
-        <div class="companion-card firsova-card companion">
-          <div class="general-infomation">
-            <div class="companion-foto">
+        <div class="companion-choise__card companion-card firsova-card companion">
+          <div class="companion-card__general general-infomation">
+            <div class="general-infomation__foto companion-foto">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
                 <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                <img class="companion-foto" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Таня Фирсова-фото">
+                <img class="general-infomation__foto" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Таня Фирсова-фото">
               </picture>
             </div>
-            <a href="#" class="companion__name">Таня Фирсова</a>
-            <span class="likes like-active">1.5 M</span>
-            <ul class="tags-list">
+            <a href="#" class="general-infomation__name general-infomation__name companion__name">Таня Фирсова</a>
+            <span class="general-infomation__likes likes general-infomation__likes--active">1.5 M</span>
+            <ul class="general-infomation__tags tags-list">
               <li class="tags-list__item"> <a href="#">#ЗОЖ</a> </li>
               <li class="tags-list__item"> <a href="#">#ПП</a> </li>
               <li class="tags-list__item"> <a href="#">#Фитнес</a> </li>
@@ -778,9 +777,9 @@
               <li class="tags-list__item"> <a href="#">#смузи</a> </li>
             </ul>
           </div>
-          <div class="country-information">
+          <div class="companion-card__country-information country-information">
             <p>хочет посетить:</p>
-            <ul class="wish-list">
+            <ul class="country-information__wish wish-list">
               <li class="wish-list__item">
                 <svg width="35" height="24" viewBox="0 0 71 48">
                   <use xlink:href="#sri-lanka"></use>
@@ -798,11 +797,11 @@
                 Сейшелы</li>
             </ul>
           </div>
-          <div class="transport-information">
-            <div class="">
-            <p>транспорт:</p>
-            <ul class="transport-list">
-              <li class="transport-list__item transport-list__item--plane transport-list__item--active">
+          <div class="companion-card__transport-information transport-information">
+            <div class="transport-information__wrapper">
+            <p class="transport-information__title">транспорт:</p>
+            <ul class="transport-information__list transport-list companion-transport">
+              <li class="companion-transport__item transport-list__item transport-list__item--plane transport-list__item--active">
                 <a href="#">
                   <svg viewBox="0 0 19 21">
                     <use xlink:href="#plane"></use>
@@ -810,7 +809,7 @@
                   <span class="visually-hidden"> Автотранспорт </span>
                 </a>
             </li>
-              <li class="transport-list__item transport-list__item--bus">
+              <li class="companion-transport__item transport-list__item transport-list__item--bus">
                 <a href="#">
                   <svg viewBox="0 0 17 21">
                     <use xlink:href="#bus"></use>
@@ -818,7 +817,7 @@
                   <span class="visually-hidden"> Авиаперелет </span>
                 </a>
               </li>
-              <li class="transport-list__item transport-list__item--bike">
+              <li class="companion-transport__item transport-list__item transport-list__item--bike">
                 <a href="#">
                   <svg viewBox="0 0 24 21">
                     <use xlink:href="#bike"></use>
@@ -826,7 +825,7 @@
                   <span class="visually-hidden"> Велосипед </span>
                 </a>
               </li>
-              <li class="transport-list__item transport-list__item--run">
+              <li class="companion-transport__item transport-list__item transport-list__item--run">
                 <a href="#">
                   <svg viewBox="0 0 20 21">
                     <use xlink:href="#walk"></use>
@@ -836,28 +835,28 @@
               </li>
             </ul>
             </div>
-            <div class="level-mark">
-              <p>левел:</p>
-              <span>99</span>
+            <div class="transport-information__level--mark">
+              <p class="transport-information__level--text">левел:</p>
+              <span class="transport-information__level--number transport-information__level--99">99</span>
             </div>
           </div>
-          <button class="call-button" type="button" name="button">Позвать!</button>
+          <button class="companion-card__call" type="button" name="button">Позвать!</button>
         </div>
-        <div class="companion-card demin-card companion">
-          <div class="general-infomation">
-            <div class="companion-foto">
+        <div class="companion-choise__card companion-card demin-card companion">
+          <div class="companion-card__general general-infomation">
+            <div class="general-infomation__foto companion-foto">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
                 <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                <img class="companion-foto" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="270" height="270" alt="Петя Демин-фото">
+                <img class="general-infomation__foto" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="270" height="270" alt="Петя Демин-фото">
               </picture>
             </div>
-            <a href="#" class="companion__name">Петя Демин</a>
-            <span class="likes">150</span>
-            <ul class="tags-list">
+            <a href="#" class="general-infomation__name companion__name">Петя Демин</a>
+            <span class="general-infomation__likes likes">150</span>
+            <ul class="general-infomation__tags tags-list">
               <li class="tags-list__item"> <a href="#">#бургер</a> </li>
               <li class="tags-list__item"> <a href="#">#бар</a> </li>
               <li class="tags-list__item"> <a href="#">#футбол</a> </li>
@@ -865,9 +864,9 @@
               <li class="tags-list__item"> <a href="#">#крафт</a> </li>
             </ul>
           </div>
-          <div class="country-information">
+          <div class="companion-card__country-information country-information">
             <p>хочет посетить:</p>
-            <ul class="wish-list">
+            <ul class="country-information__wish wish-list">
               <li class="wish-list__item">
                 <svg width="35" height="24" viewBox="0 0 71 48">
                   <use xlink:href="#belgium"></use>
@@ -880,11 +879,11 @@
                 Чехия</li>
             </ul>
           </div>
-          <div class="transport-information">
-            <div class="">
-            <p>транспорт:</p>
-            <ul class="transport-list">
-              <li class="transport-list__item transport-list__item--plane transport-list__item--active">
+          <div class="companion-card__transport-information transport-information">
+            <div class="transport-information__wrapper">
+            <p class="transport-information__title">транспорт:</p>
+            <ul class="transport-information__list transport-list companion-transport">
+              <li class="companion-transport__item transport-list__item transport-list__item--plane transport-list__item--active">
                 <a href="#">
                   <svg viewBox="0 0 19 21">
                     <use xlink:href="#plane"></use>
@@ -892,7 +891,7 @@
                   <span class="visually-hidden"> Автотранспорт </span>
                 </a>
             </li>
-              <li class="transport-list__item transport-list__item--bus transport-list__item--active">
+              <li class="companion-transport__item transport-list__item transport-list__item--bus transport-list__item--active">
                 <a href="#">
                   <svg viewBox="0 0 17 21">
                     <use xlink:href="#bus"></use>
@@ -900,7 +899,7 @@
                   <span class="visually-hidden"> Авиаперелет </span>
                 </a>
               </li>
-              <li class="transport-list__item transport-list__item--bike">
+              <li class="companion-transport__item transport-list__item transport-list__item--bike">
                 <a href="#">
                   <svg viewBox="0 0 24 21">
                     <use xlink:href="#bike"></use>
@@ -908,7 +907,7 @@
                   <span class="visually-hidden"> Велосипед </span>
                 </a>
               </li>
-              <li class="transport-list__item transport-list__item--run transport-list__item--active">
+              <li class="companion-transport__item transport-list__item transport-list__item--run transport-list__item--active">
                 <a href="#">
                   <svg viewBox="0 0 20 21">
                     <use xlink:href="#walk"></use>
@@ -918,28 +917,28 @@
               </li>
             </ul>
             </div>
-            <div class="level-mark">
-              <p>левел:</p>
-              <span>80</span>
+            <div class="transport-information__level--mark">
+              <p class="transport-information__level--text">левел:</p>
+              <span class="transport-information__level--number  transport-information__level--80">80</span>
             </div>
           </div>
-          <button class="call-button" type="button" name="button">Позвать!</button>
+          <button class="companion-card__call" type="button" name="button">Позвать!</button>
         </div>
-        <div class="companion-card smolov-card companion">
-          <div class="general-infomation">
-            <div class="companion-foto">
+        <div class="companion-choise__card companion-card smolov-card companion">
+          <div class="companion-card__general general-infomation">
+            <div class="general-infomation__foto companion-foto">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
                 <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
-                <img class="companion-foto" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="Марк Смолов-фото">
+                <img class="general-infomation__foto" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="Марк Смолов-фото">
               </picture>
             </div>
-            <a href="#" class="companion__name">Марк Смолов</a>
-            <span class="likes">1700</span>
-            <ul class="tags-list">
+            <a href="#" class="general-infomation__name companion__name">Марк Смолов</a>
+            <span class="general-infomation__likes likes">1700</span>
+            <ul class="general-infomation__tags tags-list">
               <li class="tags-list__item"> <a href="#">#реп</a> </li>
               <li class="tags-list__item"> <a href="#">#тату</a> </li>
               <li class="tags-list__item"> <a href="#">#хайпбист</a> </li>
@@ -947,9 +946,9 @@
               <li class="tags-list__item"> <a href="#">#суприм</a> </li>
             </ul>
           </div>
-          <div class="country-information">
+          <div class="companion-card__country-information country-information">
             <p>хочет посетить:</p>
-            <ul class="wish-list">
+            <ul class="country-information__wish wish-list">
               <li class="wish-list__item">
                 <svg width="35" height="24" viewBox="0 0 71 48">
                   <use xlink:href="#usa"></use>
@@ -967,11 +966,11 @@
                 Доминикана</li>
             </ul>
           </div>
-          <div class="transport-information">
-            <div class="">
-            <p>транспорт:</p>
-            <ul class="transport-list">
-              <li class="transport-list__item transport-list__item--plane transport-list__item--active">
+          <div class="companion-card__transport-information transport-information">
+            <div class="transport-information__wrapper">
+            <p class="transport-information__title">транспорт:</p>
+            <ul class="transport-information__list transport-list companion-transport">
+              <li class="companion-transport__item transport-list__item transport-list__item--plane transport-list__item--active">
                 <a href="#">
                   <svg viewBox="0 0 19 21">
                     <use xlink:href="#plane"></use>
@@ -979,7 +978,7 @@
                   <span class="visually-hidden"> Автотранспорт </span>
                 </a>
             </li>
-              <li class="transport-list__item transport-list__item--bus">
+              <li class="companion-transport__item transport-list__item transport-list__item--bus">
                 <a href="#">
                   <svg viewBox="0 0 17 21">
                     <use xlink:href="#bus"></use>
@@ -987,7 +986,7 @@
                   <span class="visually-hidden"> Авиаперелет </span>
                 </a>
               </li>
-              <li class="transport-list__item transport-list__item--bike transport-list__item--active">
+              <li class="companion-transport__item transport-list__item transport-list__item--bike transport-list__item--active">
                 <a href="#">
                   <svg viewBox="0 0 24 21" >
                     <use xlink:href="#bike"></use>
@@ -995,7 +994,7 @@
                   <span class="visually-hidden"> Велосипед </span>
                 </a>
               </li>
-              <li class="transport-list__item transport-list__item--run">
+              <li class="companion-transport__item transport-list__item transport-list__item--run">
                 <a href="#">
                   <svg viewBox="0 0 20 21">
                     <use xlink:href="#walk"></use>
@@ -1005,37 +1004,37 @@
               </li>
             </ul>
             </div>
-            <div class="level-mark">
-              <p>левел:</p>
-              <span>25</span>
+            <div class="transport-information__level--mark">
+              <p class="transport-information__level--text">левел:</p>
+              <span class="transport-information__level--number transport-information__level--25">25</span>
             </div>
           </div>
-          <button class="call-button" type="button" name="button">Позвать!</button>
+          <button class="companion-card__call" type="button" name="button">Позвать!</button>
         </div>
-        <div class="companion-card rogovaya-card companion">
-          <div class="general-infomation">
-            <div class="companion-foto">
+        <div class="companion-choise__card companion-card rogovaya-card companion">
+          <div class="companion-card__general general-infomation">
+            <div class="general-infomation__foto companion-foto">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
                 <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
-                <img class="companion-foto" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Лариса Роговая-фото">
+                <img class="general-infomation__foto" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Лариса Роговая-фото">
               </picture>
             </div>
-            <a href="#" class="companion__name">Лариса Роговая</a>
-            <span class="likes">25</span>
-            <ul class="tags-list">
+            <a href="#" class="general-infomation__name companion__name">Лариса Роговая</a>
+            <span class="general-infomation__likes likes">25</span>
+            <ul class="general-infomation__tags tags-list">
               <li class="tags-list__item"> <a href="#">#образование</a> </li>
               <li class="tags-list__item"> <a href="#">#карьера</a> </li>
               <li class="tags-list__item"> <a href="#">#учеба</a> </li>
               <li class="tags-list__item"> <a href="#">#линкедин</a> </li>
             </ul>
           </div>
-          <div class="country-information">
+          <div class="companion-card__country-information country-information">
             <p>хочет посетить:</p>
-            <ul class="wish-list">
+            <ul class="country-information__wish wish-list">
               <li class="wish-list__item">
                 <svg width="35" height="24" viewBox="0 0 71 48">
                   <use xlink:href="#uk"></use>
@@ -1048,11 +1047,11 @@
                 Германия</li>
             </ul>
           </div>
-          <div class="transport-information">
-            <div class="">
-            <p>транспорт:</p>
-            <ul class="transport-list">
-              <li class="transport-list__item transport-list__item--plane transport-list__item--active">
+          <div class="companion-card__transport-information transport-information">
+            <div class="transport-information__wrapper">
+            <p class="transport-information__title">транспорт:</p>
+            <ul class="transport-information__list transport-list companion-transport">
+              <li class="companion-transport__item transport-list__item transport-list__item--plane transport-list__item--active">
                 <a href="#">
                   <svg viewBox="0 0 19 21">
                     <use xlink:href="#plane"></use>
@@ -1060,7 +1059,7 @@
                   <span class="visually-hidden"> Автотранспорт </span>
                 </a>
             </li>
-              <li class="transport-list__item transport-list__item--bus transport-list__item--active">
+              <li class="companion-transport__item transport-list__item transport-list__item--bus transport-list__item--active">
                 <a href="#">
                   <svg viewBox="0 0 17 21" >
                     <use xlink:href="#bus"></use>
@@ -1068,7 +1067,7 @@
                   <span class="visually-hidden"> Авиаперелет </span>
                 </a>
               </li>
-              <li class="transport-list__item transport-list__item--bike">
+              <li class="companion-transport__item transport-list__item transport-list__item--bike">
                 <a href="#">
                   <svg viewBox="0 0 24 21">
                     <use xlink:href="#bike"></use>
@@ -1076,7 +1075,7 @@
                   <span class="visually-hidden"> Велосипед </span>
                 </a>
               </li>
-              <li class="transport-list__item transport-list__item--run">
+              <li class="companion-transport__item transport-list__item transport-list__item--run">
                 <a href="#">
                   <svg viewBox="0 0 20 21">
                     <use xlink:href="#walk"></use>
@@ -1086,27 +1085,27 @@
               </li>
             </ul>
             </div>
-            <div class="level-mark">
-              <p>левел:</p>
-              <span>50</span>
+            <div class="transport-information__level--mark">
+              <p class="transport-information__level--text">левел:</p>
+              <span class="transport-information__level--number transport-information__level--50">50</span>
             </div>
           </div>
-          <button class="call-button" type="button" name="button">Позвать!</button>
+          <button class="companion-card__call" type="button" name="button">Позвать!</button>
         </div>
-        <div class="page-control">
-          <button class="show-more" type="button" name="button">Показать еще</button>
-          <div class="page-nav-wrapper">
-            <ul class="page-nav">
+        <div class="companion-choise__control page-control">
+          <button class="page-control__show" type="button" name="button">Показать еще</button>
+          <div class="page-control__nav">
+            <ul class="page-control__numbers page-nav">
               <li class="page-nav__item page-nav__item--active"> <a href="#">1</a> </li>
               <li class="page-nav__item"> <a href="#">2</a> </li>
               <li class="page-nav__item"> <a href="#">3</a> </li>
               <li class="page-nav__item"> <a href="#">4</a> </li>
             </ul>
-            <div class="controls">
-              <button class="control control-back" type="button" name="button">
+            <div class="page-control__controls">
+              <button class="page-control__move page-control__back" type="button" name="button">
                 <span class="visually-hidden">Назад</span>
               </button>
-              <button class="control control-forward" type="button" name="button">
+              <button class="page-control__move page-control__forward" type="button" name="button">
                 <span class="visually-hidden">Вперед</span>
               </button>
             </div>

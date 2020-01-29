@@ -180,8 +180,8 @@
       </symbol>
     </svg>
     <header class="page-header menu-opened">
-      <div class="page-header-top">
-        <a class="logo page-header__logo">
+      <div class="page-header__top">
+        <a class="page-header__logo logo">
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
@@ -194,17 +194,17 @@
             <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
             <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-            <img class="logo__mobile-opened" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="20" alt="Погнали?">
+            <img class="logo__mobile--opened" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="20" alt="Погнали?">
           </picture>
         </a>
         <nav class="main-nav">
-          <button class="main-nav__toggle toogle-opened" type="button">
+          <button class="main-nav__toggle main-nav__toggle--opened" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <svg width="25" height="11" viewBox="0 0 25 11">
               <use xlink:href="#toogle-open"></use>
             </svg>
           </button>
-          <button class="main-nav__toggle toogle-closed" type="button">
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button">
             <span class="visually-hidden">Закрыть меню</span>
             <svg width="19" height="19" viewBox="0 0 19 19">
               <use xlink:href="#toogle-close"></use>
@@ -314,7 +314,7 @@
       <section class="service-about">
         <div class="service-about__wrapper">
           <h2 class="service-about__title title">О сервисе</h2>
-          <p class="service-about__discription">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
+          <p class="service-about__discription">Любое путешествие веселее <br> с попутчиками, которые на <br> одной волне с тобой! Делитесь своими <br class="service-about__br--tablet"> идеями путешествий и <br class="service-about__br--tablet"> черпайте вдохновение в чужих. </p>
           <strong class="service-about__call">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</strong>
           <a href="catalog.html" class="service-about__more-details button">Подробнее</a>
         </div>
@@ -324,7 +324,7 @@
       <section class="directions">
         <div class="directions-wrapper">
           <h2 class="directions__title title">Направления</h2>
-          <p class="directions__discription">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          <p class="directions__discription">Мы не продаем туры <br> и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
           <button class="directions__show-countries button" type="button" name="button">Показать все</button>
         </div>
         <ul class="directions__list guide">
@@ -385,7 +385,7 @@
         <div class="companions-wrapper">
           <h2 class="companions__title title">Попутчики</h2>
           <p class="companions__intro">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга. </p>
-          <p class="companions__intro companions__intro--strong">Теперь можно легко найти единомышленников!</p>
+          <p class="companions__intro companions__intro--strong">Теперь можно легко <br class="companions__br--tablet">найти единомышленников!</p>
           <a href="#" class="companions__show-all button">Показать всех</a>
         </div>
         <ul class="companions__list travelers">
@@ -393,12 +393,12 @@
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-              <img class="companion__foto" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="270" height="270" alt="Таня Фирсова-фото">
+              <img class="companion__foto" src="img/firsova-tablet@1x.jpg" srcset="img/firsova-tablet@2x.jpg 2x" width="270" height="270" alt="Таня Фирсова-фото">
             </picture>
-            <div class="companion__level">
+            <div class="companion__level companion__level--99">
               <span>99</span>
               <span>level</span>
             </div>
@@ -469,12 +469,12 @@
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-              <img class="companion__foto" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="270" height="270" alt="Петя Демин-фото">
+              <img class="companion__foto" src="img/demin-tablet@1x.jpg" srcset="img/demin-tablet@2x.jpg 2x" width="270" height="270" alt="Петя Демин-фото">
             </picture>
-            <div class="companion__level">
+            <div class="companion__level companion__level--80">
               <span>80</span>
               <span>level</span>
             </div>
@@ -536,9 +536,9 @@
             </div>
           </li>
         </ul>
-        <div class="profile-popup profile-popup-closed">
+        <div class="profile-popup profile-popup--closed">
           <h2 class="profile-popup__title title">Бизнес-тарифы</h2>
-          <table class="rates-table">
+          <table class="profile-popup__rates">
             <tr>
               <td>Реклама у блогера</td>
               <td>300 000 руб/пост.</td>
@@ -556,7 +556,7 @@
               <td>Индивидуально</td>
             </tr>
           </table>
-          <button class="profile-popup-close" type="button" name="button">Закрыть окно</button>
+          <button class="profile-popup__close" type="button" name="button">Закрыть окно</button>
         </div>
       </section>
       <section class="profile">
@@ -575,13 +575,13 @@
       </section>
       <section class="user-login">
         <h2 class="user-login__title title">Заинтересовались?</h2>
-        <p class="user-login__discription"> Зарегистрируйтесь, это быстро и бесплатно!<br> Уже зарегистрированы? Тогда скорее <a href="form.html" class="login-link">авторизуйтесь.</a> </p>
+        <p class="user-login__discription"> Зарегистрируйтесь, <br> это быстро и бесплатно!<br class="user-login__br--tablet"> Уже <br class="user-login__br--desktop"> зарегистрированы? Тогда скорее <a href="form.html" class="login-link">авторизуйтесь.</a> </p>
         <form class="user-login__intrance">
           <input type="text" value="E-mail">
           <button class="button" type="submit" name="button"></button>
         </form>
         <div class="questions">
-          <p class="questions__discription">Остались вопросы? Мы с радостью на них ответим!</p>
+          <p class="questions__discription">Остались вопросы? <br> Мы с радостью на них ответим!</p>
           <div class="questions__wrapper">
             <a href="tel:88005558628" class="questions__tel">
               <span>

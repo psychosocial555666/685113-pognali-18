@@ -1,0 +1,60 @@
+.companion-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 17px 19px 22px;
+  margin-bottom: 10px;
+  &:hover {
+    box-shadow: 0px 6px 21px 0 rgba(0, 0, 0, 0.08);
+  }
+}
+.companion-card__call {
+  width: 100%;
+  border: none;
+  background-color: #ffd74b;
+  border-radius: 20px;
+  padding-top: 12px;
+  padding-bottom: 9px;
+  font-family: @main-font;;
+  font-size: 17px;
+  font-weight: 700;
+  color: #161c35;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    background-color: #ffbd30;
+  }
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
+}
+@media (min-width: 768px) {
+  .companion-card {
+    padding: 35px 25px 15px 35px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .companion-card__call {
+    width: 148px;
+    position: absolute;
+    bottom: 108px;
+    left: 254px;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    border-radius: 25px;
+  }
+}
+@media (min-width: 1440px) {
+  .companion-card {
+    padding: 0;
+    height: 285px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+  .companion-card__call {
+    bottom: 43px;
+    left: 340px;
+  }
+}

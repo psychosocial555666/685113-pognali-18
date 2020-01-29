@@ -1,0 +1,208 @@
+.step-one__parametr {
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  span {
+    margin-left: auto;
+    margin-bottom: 8px;
+    opacity: 0.3;
+    letter-spacing: 1px;
+  }
+  b {
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+}
+.step-one__parametr--duration {
+  b {
+    margin-bottom: 8px;
+  }
+  span {
+    margin-bottom: 8px;
+  }
+}
+.step-one__switch {
+  width: 100%;
+  border-radius: 4px;
+  border: solid 1px #cbced9;
+  background-color: #ffffff;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+}
+.step-one__switch--value {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 15px;
+  width: 12px;
+  height: 21px
+}
+.step-one__switch-button {
+  border: none;
+  background-color: inherit;
+  background-image: url(../img/qty-minus-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 14px;
+  height: 19px;
+  cursor: pointer;
+  opacity: 0.3;
+  box-sizing: border-box;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.1;
+  }
+}
+.step-one__switch-button--more {
+  background-image: url(../img/qty-plus-mobile.svg);
+}
+.step-one__children {
+  cursor: pointer;
+  margin-bottom: 25px;
+  label {
+    cursor: pointer;
+    position: relative;
+    margin-left: 39px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    margin-top: 5px;
+    display: block;
+    letter-spacing: -0.5px;
+    &:hover {
+      &::before {
+        border: solid 1px #959bb2;
+      }
+    }
+    &:active {
+      &::before {
+        opacity: 0.3;
+        background-color: #959bb2;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: -39px;
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      border: solid 1px #cbced9;
+      background-color: #ffffff;
+      cursor: pointer;
+    }
+  }
+  input[type=checkbox]:checked + label {
+    &::before {
+      background-image: url(../img/tick.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 9px 9px;
+    }
+  }
+}
+.step-one__calendar {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .step-one__parametr {
+    font-size: 20px;
+    margin-bottom: 11px;
+    b {
+      margin-bottom: 22px;
+      letter-spacing: 1.5px;
+    }
+    span {
+      letter-spacing: 2px;
+    }
+  }
+  .step-one__switch {
+    padding-top: 22px;
+    padding-bottom: 23px;
+  }
+  .step-one__switch-button {
+    width: 30px;
+    height: 22px;
+    background-image: url(../img/qty-minus.svg);
+  }
+  .step-one__switch-button--more {
+    background-image: url(../img/qty-plus.svg);
+  }
+  .step-one__parametr--duration {
+    order: 2;
+    margin-bottom: 41px;
+  }
+  .step-one__children {
+    padding-bottom: 35px;
+    margin-bottom: 19px;
+    border-bottom: solid 1px #cbced9;
+    label {
+      letter-spacing: 2px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #1d2e5b;
+      text-transform: uppercase;
+      margin-left: 59px;
+      margin-top: 0;
+      &::before{
+        width: 34px;
+        height: 34px;
+        top: -4px;;
+        left: -58px;
+      }
+    }
+  }
+  .step-one__calendar {
+    order: 2;
+    margin-bottom: 17px;
+  }
+}
+@media (min-width: 1440px) {
+  .step-one__parametr {
+    flex-wrap: nowrap;
+    align-items: center;
+    min-width: 576px;
+    justify-content: space-between;
+    b {
+      width: 195px;
+      margin-right: 27px;
+      margin-bottom: 0;
+    }
+    span {
+      order: 2;
+      margin: 0;
+      margin-right: auto;
+    }
+  }
+  .step-one__switch {
+    width: 180px;
+    margin: 0;
+    margin-right: 35px;
+  }
+  .step-one__parametr--duration {
+    order: 1;
+  }
+  .step-one__children {
+    order: 2;
+    margin-left: auto;
+    border: none;
+    position: relative;
+    top: -80px;
+    label {
+      margin-top: 20px;
+    }
+  }
+  .step-one__parametr--duration {
+    margin-bottom: 32px;
+  }
+  .step-one__calendar {
+    margin-bottom: 32px;
+  }
+}

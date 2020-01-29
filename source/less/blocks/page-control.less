@@ -1,0 +1,145 @@
+.page-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-control__show {
+  color: #1d2e5b;
+  font-family: @main-font;;
+  font-size: 17px;
+  border: none;
+  background-color: inherit;
+  text-transform: uppercase;
+  padding-left: 33px;
+  position: relative;
+  margin-bottom: 25px;
+  font-weight: 700;
+  margin-top: 16px;
+  outline: none;
+  cursor: pointer;
+  right: -2px;
+  top: -3px;
+  &::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background-image: url(../img/qty-plus-mobile.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+.page-control__nav {
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+}
+.page-control__controls {
+  display: flex;
+}
+.page-control__move {
+  background-color: white;
+  border: none;
+  width: 50%;
+  height: 50px;
+  padding: 0;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  &::before {
+    content: "";
+    width: 12px;
+    height: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -5px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.page-control__back {
+  border-right: 1px solid #edeff6;
+  border-radius: 15px 0px 0 15px;
+  &::before {
+    background-image: url(../img/triangle-arrow-left.svg);
+  }
+  &:hover {
+    &::before {
+      opacity: 0.6;
+    }
+  }
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
+  }
+}
+.page-control__forward {
+  border-radius: 0px 15px 15px 0px;
+  &::before {
+    background-image: url(../img/triangle-arrow-right.svg);
+  }
+  &:hover {
+    &::before {
+      opacity: 0.6;
+    }
+  }
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .page-control__show {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    padding-top: 7px;
+    margin-bottom: 51px;
+    &::before {
+      width: 27px;
+      height: 27px;
+      top: 5px;
+      left: -44px;
+    }
+  }
+  .page-control__nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  .page-control__controls {
+    width: 123px;
+    margin-left: auto;
+  }
+  .page-control__back {
+    border: none;
+  }
+}
+@media (min-width: 1440px) {
+  .page-control__show {
+    margin-top: 35px;
+    margin-bottom: 71px;
+    left: -12px;
+    &::before {
+      left: -51px;
+    }
+  }
+  .page-control__controls {
+    width: 87px;
+    margin-left: auto;
+    margin-right: 28px;
+  }
+}

@@ -5,11 +5,11 @@
   background-position: 18px 21px;
   position: relative;
   margin-top: -1px;
-  padding-top: 52px;
+  padding-top: 51px;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 82px;
-  font-weight: 400;
+  font-weight: 300;
   color: white;
   font-size: 16px;
   line-height: 22px;
@@ -53,7 +53,7 @@
     height: 578px;
     background-image: url(../img/about-tablet@1x.png);
     background-repeat: no-repeat;
-    background-position: 20px -3px;
+    background-position: 11px -5px;
     background-size: 376px 548px;
     @media (min-resolution: 1.5dppx) {
         background-image: url(../img/about-tablet@2x.png);
@@ -64,7 +64,7 @@
     width: 275px;
   }
   .service-about__wrapper {
-    width: 325px;
+    width: 335px;
     padding-left: 35px;
     box-sizing: border-box;
     display: flex;
@@ -74,6 +74,12 @@
     font-size: 28px;
     line-height: 33px;
     margin-bottom: 32px;
+    br {
+      display: none;
+    }
+    .service-about__br--tablet {
+      display: block;
+    }
   }
   .service-about__call {
     font-size: 21px;
@@ -82,20 +88,23 @@
   }
 }
 @media (min-width: 1440px) {
-  .service-about__title {
-    margin-bottom: 40px;
-  }
   .service-about {
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 138px;
     padding-bottom: 0;
-    .service-about__more-details {
-      width: 275px;
-    }
+  }
+  .service-about__title {
+    margin-bottom: 43px;
+  }
+  .service-about__more-details {
+    width: 275px;
   }
   .service-about__discription {
-    margin-bottom: 40px;
+    margin-bottom: 43px;
+    .service-about__br--tablet {
+      display: none;
+    }
   }
   .service-about__logo {
     position: absolute;
@@ -117,7 +126,7 @@
     padding-bottom: 162px;
   }
   .service-about__call {
-    margin-bottom: 87px;
+    margin-bottom: 84px;
     width: 415px;
   }
 }

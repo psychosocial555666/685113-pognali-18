@@ -5,50 +5,59 @@
   display: flex;
   flex-wrap: wrap;
 }
-.profile-foto {
-  width: 100px;
-  height: 100px;
-}
-.profile-level {
+.profile-information__level {
   width: 94px;
   height: 94px;
   border-radius: 50%;
-  border: solid 3px #ff8d30;
   margin-right: 35px;
   margin-left: 20px;
-  margin-bottom: 17px;
-  span {
-    display: block;
-    position: relative;
-    font-size: 38px;
-    font-weight: 700;
-    color: #161c35;
-    top: 50%;
-    left: 50%;
-    margin-left: -22px;
-    margin-top: -34px;
-    &::before {
-      content: "level";
-      display: block;
-      width: 50px;
-      font-size: 18px;
-      font-weight: 400;
-      position: absolute;
-      text-align: center;
-      bottom: -21px;
-      left: -4px;
-      border-top: 2px solid #cbced9;
-      color: #444444;
-    }
+  margin-bottom: 18px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    width: 94px;
+    height: 94px;
+    top: 0;
+    left: 0;
+    background-image: url(../img/80-mobile.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 94px 94px;
   }
 }
-.profile-foto {
-  width: 100px;
+.profile-information__number {
+  display: block;
+  position: relative;
+  font-size: 38px;
+  font-weight: 700;
+  color: #161c35;
+  top: 50%;
+  left: 50%;
+  margin-left: -22px;
+  margin-top: -34px;
+  &::before {
+    content: "level";
+    display: block;
+    width: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    position: absolute;
+    text-align: center;
+    bottom: -21px;
+    left: -4px;
+    border-top: 2px solid #cbced9;
+    color: #444444;
+  }
+}
+.profile-information__foto {
+  width: 97px;
   height: 100px;
   border-radius: 50%;
   background-color: #dfe3f0;
 }
-.change-foto {
+.profile-information__change {
   border: none;
   cursor: pointer;
   background-color: #dfe3f0;
@@ -56,8 +65,9 @@
   border-radius: 20px;
   display: flex;
   justify-content: center;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
   outline: none;
+  text-align: center;
   span {
     padding: 0;
     margin: 0;
@@ -68,103 +78,17 @@
     padding-top: 11.5px;
     padding-bottom: 8.5px;
   }
-  .button-sing-two {
-    display: none;
-  }
   &:hover {
     background-color: #d1d7e9;
   }
   &:active {
-    p {
+    span {
       color: rgba(29, 46, 91, 0.3);
     }
   }
 }
-.profile-tags {
-  padding: 22px 30px 23px 25px;
-  border-radius: 10px;
-  border: solid 1px #cbced9;
-  position: relative;
-  width: 100%;
-  margin-bottom: 25px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #444444;
-  box-sizing: border-box;
-  p {
-    display: block;
-    position: absolute;
-    top: -10px;
-    left: 100px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #1d2e5b;
-    text-transform: uppercase;
-    padding: 0 17px;
-    margin: 0;
-    background-color: #edeff6;
-  }
-}
-.tags-input {
-  background-color: #edeff6;
-  border: none;
-  font-size: 16px;
-  font-weight: 400;
-  color: #444444;
-  resize: none;
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 38px;
-  padding: 0;
-  margin: 0;
-  outline: none;
-}
-.profile-transports {
-  padding: 14px 69px;
-  border-radius: 10px;
-  border: solid 1px #cbced9;
-  position: relative;
-  width: 100%;
-  box-sizing: border-box;
-  p {
-    display: block;
-    position: absolute;
-    top: -10px;
-    left: 76px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #1d2e5b;
-    text-transform: uppercase;
-    padding: 0 17px;
-    margin: 0;
-    background-color: #edeff6;
-  }
-  .transport-list {
-    padding: 0;
-    margin: 0;
-    width: 132px;
-  }
-  .transport-list__item {
-    border-radius: 50%;
-    background-color: white;
-    width: 33px;
-    height: 33px;
-    box-sizing: border-box;
-    padding: 0;
-  }
-  label {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-  }
-  input:checked + label {
-    svg {
-      opacity: 1;
-      fill: #1d2e5b;
-    }
-  }
+.button-sing-two {
+  display: none;
 }
 @media (min-width: 768px) {
   .profile-information {
@@ -173,25 +97,7 @@
     align-items: center;
     position: relative;
   }
-  .profile-tags {
-    order: 2;
-    padding: 35px 40px 17px 40px;
-    .tags-list {
-      width: 100%;
-      font-size: 20px;
-    }
-    p {
-      font-size: 20px;
-      top: auto;
-      bottom: -12px;
-      left: 267px;
-    }
-  }
-  .tags-input {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-  .profile-foto {
+  .profile-information__foto {
     width: 94px;
     height: 94px;
     border-radius: 4px;
@@ -201,34 +107,12 @@
     top: 114px;
     right: 75px;
   }
-  .profile-level {
+  .profile-information__level {
     margin: 2px 59px 52px 0;
     width: 89px;
     height: 90px;
   }
-  .profile-transports {
-    order: 1;
-    width: 308px;
-    box-sizing: border-box;
-    padding: 25px 53px;
-    margin-bottom: 52px;
-    .transport-list {
-      flex-direction: row;
-      width: 200px;
-    }
-    .transport-list__item {
-      width: 43px;
-      height: 43px;
-    }
-    p {
-      top: auto;
-      bottom: -12px;
-      left: 80px;
-      font-size: 20px;
-      letter-spacing: 1.5px;
-    }
-  }
-  .change-foto {
+  .profile-information__change {
     order: 2;
     border-radius: 10px;
     margin-bottom: 50px;
@@ -247,20 +131,20 @@
     position: relative;
     justify-content: space-between;
   }
-  .profile-level {
+  .profile-information__level {
     position: absolute;
     top: -98px;
     right: 330px;
     z-index: 2;
-    span {
+  }
+  .profile-information__number {
+    color: white;
+    &::before {
       color: white;
-      &::before {
-        color: white;
-        border-color: white;
-      }
+      border-color: white;
     }
   }
-  .profile-foto {
+  .profile-information__foto {
     position: absolute;
     top: -140px;
     right: 155px;
@@ -269,46 +153,21 @@
     z-index: 2;
     border-radius: 0;
   }
-  .change-foto {
+  .profile-information__change {
     border-radius: 0 0 10px 10px;
     position: absolute;
     top: 50px;
     right: 155px;
     width: 190px;
-    .button-sing-one {
-      display: none;
-    }
-    .button-sing-two {
-      display: block;
-    }
     span {
       padding-top: 11.5px;
       padding-bottom: 12px;
     }
   }
-  .profile-tags {
-    order: 1;
-    width: 730px;
-    margin-bottom: 0;
-    box-sizing: border-box;
-    position: absolute;
-    top: 123px;
-    left: 124px;
-    p {
-      left: 22px;
-    }
+  .button-sing-one {
+    display: none;
   }
-  .profile-transports {
-    margin-bottom: 0px;
-    width: 384px;
-    box-sizing: border-box;
-    .transport-list {
-      justify-content: center;
-      margin-right: 0;
-      padding-left: 40px;
-    }
-    p {
-      left: 120px;
-    }
+  .button-sing-two {
+    display: block;
   }
 }

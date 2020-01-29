@@ -1,9 +1,9 @@
 var pageHeader = document.querySelector(".page-header")
-var toogleOpened = document.querySelector(".toogle-opened")
-var toogleClosed = document.querySelector(".toogle-closed")
+var toogleOpened = document.querySelector(".main-nav__toggle--opened")
+var toogleClosed = document.querySelector(".main-nav__toggle--closed")
 var profilePopup = document.querySelector(".profile-popup")
 var rateOpen = document.querySelector(".profile__rates")
-var rateClose = document.querySelector(".profile-popup-close")
+var rateClose = document.querySelector(".profile-popup__close")
 
 pageHeader.classList.remove("menu-opened")
 
@@ -19,10 +19,10 @@ toogleClosed.addEventListener("click", function (evt){
 
 rateOpen.addEventListener("click", function (evt){
   evt.preventDefault();
-  profilePopup.classList.remove("profile-popup-closed")
+  profilePopup.classList.remove("profile-popup--closed")
 })
 
 rateClose.addEventListener("click", function (evt){
   evt.preventDefault();
-  profilePopup.classList.add("profile-popup-closed")
+  profilePopup.classList.add("profile-popup--closed")
 })

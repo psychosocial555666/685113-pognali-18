@@ -1,0 +1,175 @@
+.step-three {
+  padding-bottom: 17px;
+  .button-wrapper__small {
+    margin-top: 13px;
+  }
+}
+.step-three__nav {
+  display: none;
+}
+.step-three__instruction {
+  margin-bottom: 2px;
+}
+.step-three__fun {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+.step-three__flag {
+  margin-top: 7px;
+  margin-left: auto;
+  box-shadow: 0 0 8px 21px white;
+  svg {
+    margin-left: auto;
+  }
+}
+.step-three__country {
+  font-size: 18px;
+  padding-left: 12px;
+  margin-bottom: 16px;
+}
+.step-three__discription {
+  width: 220px;
+  height: 194px;
+  border-radius: 4px;
+  border: solid 1px #cbced9;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(68, 68, 68, 0.3);
+  padding: 15px;
+  padding-top: 8px;
+  margin-bottom: 8px;
+  width: 100%;
+  resize: none;
+  outline: none;
+  line-height: 22px;
+  &:hover {
+    border: solid 1px #959bb2;
+  }
+  &:active, &:focus {
+    border: solid 1px #161c35;
+    color: #444444;
+  }
+}
+.step-three__point {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #1d2e5b;
+  position: absolute;
+  top: 27px;
+  left: -2px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -12px;
+    width: 12px;
+    height: 2px;
+    background-color: #1d2e5b;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -12px;
+    width: 2px;
+    height: 284px;
+    background-color: #1d2e5b;
+  }
+}
+.step-three__last {
+  .step-three__point {
+    &::after {
+      display: none;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .step-three {
+    margin-bottom: 63px;
+  }
+  .step-three__instruction {
+    padding-top: 12px;
+    padding-bottom: 36px;
+  }
+  .step-three__country {
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+  .step-three__point {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #1d2e5b;
+    position: absolute;
+    top: 45px;
+    left: 521px;
+    &::before{
+      display: none;
+    }
+    &::after {
+      display: block;
+      width: 2px;
+      height: 263px;
+      top: 12px;
+      left: 6px;
+    }
+  }
+  .step-three__discription {
+    font-size: 20px;
+    height: 120px;
+    width: 470px;
+    margin-bottom: 10px;
+  }
+  .step-three__last {
+    margin-bottom: 19px;
+  }
+}
+@media (min-width: 1440px) {
+  .step-three__flag {
+    margin-right: 115px;
+  }
+  .step-three__title {
+    margin-bottom: 20px;
+  }
+  .step-three__instruction {
+    margin-top: -53px;
+    width: 485px;
+    margin-bottom: 35px;
+  }
+  .step-three__nav {
+    display: block;
+  }
+  .step-three__discription {
+    width: 696px;
+    height: 103px;
+    padding-top: 19px;
+    padding-left: 19px;
+    margin-bottom: 17px;
+  }
+  .step-three__country {
+    display: block;
+    min-width: 300px;
+  }
+  .step-three__point {
+    left: 768px;
+    &::after {
+      display: block;
+      top: 10px;
+      left: 6px;
+      width: 3px;
+      height: 265px;
+    }
+  }
+  .step-three__last {
+    margin-bottom: 28px;
+    .step-three__country {
+      margin-bottom: 38px;
+    }
+  }
+}

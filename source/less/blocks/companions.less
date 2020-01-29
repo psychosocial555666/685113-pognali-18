@@ -58,6 +58,10 @@
 .companions__intro--strong {
   font-weight: 700;
   margin-bottom: 57px;
+  font-weight: 700;
+  br {
+    display: none;
+  }
 }
 .companions__list {
   list-style: none;
@@ -87,9 +91,9 @@
       background-image: url(../img/smolov-back-desktop@1x.png);
     }
     &::after {
-      top: 210px;
+      top: 230px;
       left: auto;
-      right: 77px;
+      right: 75px;
       width: 285px;
       height: 285px;
       background-image: url(../img/rogovaya-back-desktop@1x.png);
@@ -115,10 +119,14 @@
   .companions__intro--strong {
     font-size: 21px;
     line-height: 25px;
-    width: 258px;
+    width: 260px;
     padding-left: 0;
     margin: 0;
     margin-bottom: 60px;
+    font-weight: 700;
+    .companions__br--tablet {
+      display: inline;
+    }
   }
   .companions__list {
     flex-direction: row;
@@ -136,7 +144,7 @@
 @media (min-width: 1440px) {
   .companions {
     padding-left: 132px;
-    padding-top: 233px;
+    padding-top: 235px;
     padding-right: 60px;
     padding-bottom: 128px;
     display: flex;
@@ -177,6 +185,7 @@
   }
   .companions__intro {
     order: 1;
+    margin-bottom: 43px;
   }
   .companions__intro--strong {
     padding-bottom: 0;
